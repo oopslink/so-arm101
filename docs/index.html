@@ -1,0 +1,120 @@
+---
+layout: null
+title: SO-101 Lab
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090909">
+    <meta name="description" content="SO-ARM101、LeRobot 与 π0 机器人学习实践：知识总结和完整实验记录。">
+    <title>SO-101 Lab · 让机械臂学会敲木鱼</title>
+    <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+  </head>
+  <body class="home-page">
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <span class="brand-mark" aria-hidden="true"><i></i></span>
+        <span>SO·101 <em>LAB</em></span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="#explore">内容</a>
+        <a href="#demo">演示</a>
+        <a href="https://github.com/oopslink/so-arm101" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </nav>
+      <a class="header-cta" href="{{ '/01-beginner-guide.html' | relative_url }}">开始阅读</a>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-card blueprint-grid">
+          <div class="hero-visual">
+            <img src="{{ '/assets/so101-muyu-scene.png' | relative_url }}" alt="SO-ARM101 双臂、两路摄像头、木鱼与敲棒组成的实验场景">
+            <span class="figure-label">FIG. 01 / REAL-WORLD IMITATION</span>
+          </div>
+          <div class="hero-copy">
+            <span class="tag">✦ FEATURED PROJECT</span>
+            <p class="kicker">SO-ARM101 × LeRobot × π0</p>
+            <h1>让机械臂<br>学会敲木鱼</h1>
+            <p class="hero-lead">从人类示范到视觉语言动作模型，再到真实机械臂执行。这里既有初学者需要的知识地图，也保留了失败、诊断与修复的完整实验现场。</p>
+            <div class="hero-actions">
+              <a class="button primary" href="{{ '/01-beginner-guide.html' | relative_url }}">阅读知识总结 →</a>
+              <a class="button secondary" href="{{ '/02-experiment-log.html' | relative_url }}">查看实验记录</a>
+            </div>
+            <div class="hero-stats" aria-label="项目数据概览">
+              <span><b>80</b> EPISODES</span>
+              <span><b>50,596</b> FRAMES</span>
+              <span><b>2</b> CAMERAS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="explore-section" id="explore">
+        <header class="section-heading">
+          <div><span class="section-icon">⌁</span><h2>Explore the project</h2></div>
+          <p>两条阅读路线：先建立完整认识，或直接进入实验现场。</p>
+        </header>
+        <div class="story-grid">
+          <a class="story-card featured" href="{{ '/01-beginner-guide.html' | relative_url }}">
+            <div class="story-image blueprint-grid"><img src="{{ '/assets/traditional-vs-imitation-learning.png' | relative_url }}" alt="传统编程与模仿学习对比图"></div>
+            <div class="story-copy">
+              <span class="card-index">01 / KNOWLEDGE</span>
+              <h3>知识总结</h3>
+              <p>机器人怎样学习？SO-ARM101、LeRobot 和 π0 各自负责什么？从校准、采集、训练到部署，建立一张可复用的认知地图。</p>
+              <strong>开始阅读 <span>→</span></strong>
+            </div>
+          </a>
+          <a class="story-card" href="{{ '/02-experiment-log.html' | relative_url }}">
+            <div class="story-image blueprint-grid"><img src="{{ '/assets/v3-training-metrics.png' | relative_url }}" alt="π0 模型训练指标图"></div>
+            <div class="story-copy">
+              <span class="card-index">02 / FIELD NOTES</span>
+              <h3>实验记录</h3>
+              <p>为什么机械臂一度完全不动？训练标签、后处理器与真机控制之间发生了什么？按时间还原关键判断与解决方案。</p>
+              <strong>进入现场 <span>→</span></strong>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="pipeline-section blueprint-grid">
+        <div class="pipeline-intro">
+          <span class="tag subtle">HOW IT WORKS</span>
+          <h2>人示范，数据记住，<br>模型再做一遍。</h2>
+          <p>相机记录“看见什么”，关节状态记录“手臂在哪里”，动作标签记录“接下来怎么动”。π0 学习三者之间的关系，部署时再把预测动作交给底层控制器执行。</p>
+        </div>
+        <ol class="pipeline-steps">
+          <li><b>01</b><span>TELEOPERATE</span><strong>人类示范</strong><small>Leader 遥操作 Follower</small></li>
+          <li><b>02</b><span>RECORD</span><strong>同步采集</strong><small>图像、状态与动作</small></li>
+          <li><b>03</b><span>FINE-TUNE</span><strong>训练 π0</strong><small>从数据学习动作策略</small></li>
+          <li><b>04</b><span>DEPLOY</span><strong>真机闭环</strong><small>观察、预测、执行、再观察</small></li>
+        </ol>
+      </section>
+
+      <section class="demo-section" id="demo">
+        <div class="demo-copy">
+          <span class="tag subtle">RESULT / DEMO</span>
+          <h2>它真的敲响了木鱼</h2>
+          <p>成功并不意味着系统已经稳定。演示证明完整链路可以工作；掉棒、抓取停留不足和场景变化，仍是下一轮需要解决的问题。</p>
+          <a href="{{ '/02-experiment-log.html' | relative_url }}">查看完整复盘 →</a>
+        </div>
+        <div class="video-frame blueprint-grid">
+          <video controls preload="metadata" playsinline poster="{{ '/assets/so101-muyu-scene.png' | relative_url }}">
+            <source src="{{ '/assets/demo.mp4' | relative_url }}" type="video/mp4">
+            你的浏览器不支持视频播放。
+          </video>
+          <span>FINAL RUN / SO-101 LAB</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark"><i></i></span><span>SO·101 <em>LAB</em></span></a>
+      <p>Real robots. Real data. Honest notes.</p>
+      <a href="https://github.com/oopslink/so-arm101" target="_blank" rel="noreferrer">View on GitHub ↗</a>
+    </footer>
+    <script src="{{ '/assets/site.js' | relative_url }}"></script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+[TRACE] Hardware action trace: <ROBOT_LEROBOT_ROOT>/outputs/qiaomuyu_pi0_v3_fixed_postprocessor_hardware_trace_60s.jsonl
+INFO 2026-09-10 21:54:06 _rollout.py:219 Building rollout context...
+INFO 2026-09-10 21:54:06 /context.py:245 Loading policy from '<ROBOT_MODEL_ROOT>/qiaomuyu_search_dual_pi0_v3_follower_future4'...
+INFO 2026-09-10 21:55:23 ling_pi0.py:453 Enabled gradient checkpointing for PI0Pytorch model
+WARNING 2026-09-10 21:55:23 ling_pi0.py:943 Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING 2026-09-10 21:55:23 ling_pi0.py:943 Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+INFO 2026-09-10 21:55:38 /context.py:272 Policy loaded: type=pi0, device=cuda
+INFO 2026-09-10 21:55:38 /context.py:300 Connecting robot (so100_follower)...
+INFO 2026-09-10 21:55:39 a_opencv.py:195 OpenCVCamera(/dev/v4l/by-id/usb-icSpring_icspring_camera_20240307110322-video-index0) connected.
+INFO 2026-09-10 21:55:41 a_opencv.py:195 OpenCVCamera(/dev/v4l/by-id/usb-SN0002_1080P_USB_Camera_44434000_P030C01_SN0002-video-index0) connected.
+INFO 2026-09-10 21:55:41 follower.py:109 oopslink_follower_arm SOFollower connected.
+The PI0 model is a direct port of the OpenPI implementation.
+This implementation follows the original OpenPI structure for compatibility.
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: <ROBOT_MODEL_ROOT>/qiaomuyu_search_dual_pi0_v3_follower_future4
+✓ Loaded state dict from model.safetensors
+All keys loaded successfully!
+[TRACE] Torque after connect: {'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+INFO 2026-09-10 21:55:41 /context.py:303 Robot connected: so_follower
+INFO 2026-09-10 21:55:41 /context.py:308 Captured initial robot position (6 keys)
+INFO 2026-09-10 21:55:41 /context.py:487 Creating inference engine (type=rtc)...
+INFO 2026-09-10 21:55:41 /factory.py:100 Creating inference engine: rtc
+INFO 2026-09-10 21:55:41 ence/rtc.py:152 RTCInferenceEngine initialized (torch.compile disabled, no warmup needed)
+INFO 2026-09-10 21:55:41 /context.py:510 Rollout context assembled successfully
+INFO 2026-09-10 21:55:41 _rollout.py:223 Rollout strategy: base
+INFO 2026-09-10 21:55:41 _rollout.py:224 Robot: so100_follower | FPS: 30 | Duration: 60.0s
+INFO 2026-09-10 21:55:41 gies/core.py:65 Starting inference engine...
+INFO 2026-09-10 21:55:41 ence/rtc.py:239 Resetting RTC inference state (policy + processors + queue)
+INFO 2026-09-10 21:55:41 ence/rtc.py:212 RTC inference thread started
+INFO 2026-09-10 21:55:41 gies/core.py:70 Inference engine started
+INFO 2026-09-10 21:55:41 gies/base.py:40 Base strategy ready
+INFO 2026-09-10 21:55:41 _rollout.py:233 Rollout setup complete, starting rollout...
+INFO 2026-09-10 21:55:41 ence/rtc.py:234 Resuming RTC inference thread
+INFO 2026-09-10 21:55:41 gies/base.py:53 Base strategy control loop started
+WARNING 2026-09-10 21:55:42 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=0, real_delay=24
+[TRACE] step=1 delta={'shoulder_pan': -1.95, 'shoulder_lift': 6.15, 'elbow_flex': -4.07, 'wrist_flex': -3.04, 'wrist_roll': -1.03, 'gripper': -0.03} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:55:42 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=7, real_delay=8
+WARNING 2026-09-10 21:55:43 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=30 delta={'shoulder_pan': 0.2, 'shoulder_lift': 2.87, 'elbow_flex': -2.26, 'wrist_flex': -0.86, 'wrist_roll': 0.21, 'gripper': -0.02} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:55:44 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=60 delta={'shoulder_pan': -0.37, 'shoulder_lift': 0.65, 'elbow_flex': -2.08, 'wrist_flex': -0.91, 'wrist_roll': 0.18, 'gripper': -0.02} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:55:45 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=90 delta={'shoulder_pan': 0.61, 'shoulder_lift': 6.49, 'elbow_flex': -13.95, 'wrist_flex': 5.01, 'wrist_roll': -0.29, 'gripper': -0.35} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+[TRACE] step=120 delta={'shoulder_pan': -0.66, 'shoulder_lift': -4.65, 'elbow_flex': 3.12, 'wrist_flex': -0.14, 'wrist_roll': -0.35, 'gripper': 0.12} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:55:46 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=7, real_delay=8
+[TRACE] step=150 delta={'shoulder_pan': 0.75, 'shoulder_lift': -1.46, 'elbow_flex': -1.42, 'wrist_flex': -6.18, 'wrist_roll': 1.45, 'gripper': 0.13} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:55:48 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=7, real_delay=8
+[TRACE] step=180 delta={'shoulder_pan': -1.13, 'shoulder_lift': 17.49, 'elbow_flex': -2.6, 'wrist_flex': -1.09, 'wrist_roll': 2.05, 'gripper': 0.01} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+[TRACE] step=210 delta={'shoulder_pan': -1.63, 'shoulder_lift': 6.6, 'elbow_flex': -2.71, 'wrist_flex': -17.25, 'wrist_roll': 0.33, 'gripper': -0.27} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:55:50 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=7, real_delay=8
+WARNING 2026-09-10 21:55:50 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=240 delta={'shoulder_pan': 0.97, 'shoulder_lift': 3.84, 'elbow_flex': -3.12, 'wrist_flex': -0.98, 'wrist_roll': -0.67, 'gripper': -0.05} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:55:51 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=270 delta={'shoulder_pan': 0.6, 'shoulder_lift': -2.62, 'elbow_flex': 0.17, 'wrist_flex': 0.59, 'wrist_roll': 0.26, 'gripper': 0.63} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:55:51 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=300 delta={'shoulder_pan': -0.46, 'shoulder_lift': -2.53, 'elbow_flex': 0.18, 'wrist_flex': 0.43, 'wrist_roll': 0.09, 'gripper': -0.4} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+[TRACE] step=330 delta={'shoulder_pan': 0.05, 'shoulder_lift': 7.1, 'elbow_flex': -9.57, 'wrist_flex': 1.81, 'wrist_roll': -0.63, 'gripper': -2.19} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:55:53 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:55:54 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=360 delta={'shoulder_pan': 0.5, 'shoulder_lift': -10.35, 'elbow_flex': 8.3, 'wrist_flex': -3.96, 'wrist_roll': 0.35, 'gripper': 0.04} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+[TRACE] step=390 delta={'shoulder_pan': -1.23, 'shoulder_lift': -34.4, 'elbow_flex': 8.22, 'wrist_flex': 17.76, 'wrist_roll': 0.13, 'gripper': -0.37} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:55:56 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=420 delta={'shoulder_pan': -3.63, 'shoulder_lift': -15.68, 'elbow_flex': -9.93, 'wrist_flex': 18.66, 'wrist_roll': 1.09, 'gripper': 0.14} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:55:57 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=450 delta={'shoulder_pan': -1.31, 'shoulder_lift': -6.59, 'elbow_flex': -1.0, 'wrist_flex': -6.41, 'wrist_roll': -0.57, 'gripper': 0.31} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:55:57 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:55:58 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=480 delta={'shoulder_pan': 1.96, 'shoulder_lift': 2.36, 'elbow_flex': -2.41, 'wrist_flex': -4.25, 'wrist_roll': -0.75, 'gripper': 0.44} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:55:59 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:55:59 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=510 delta={'shoulder_pan': -0.38, 'shoulder_lift': 2.89, 'elbow_flex': -2.87, 'wrist_flex': 0.28, 'wrist_roll': 0.69, 'gripper': 0.07} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:00 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=540 delta={'shoulder_pan': -0.03, 'shoulder_lift': -0.83, 'elbow_flex': 0.59, 'wrist_flex': 0.17, 'wrist_roll': -0.74, 'gripper': 0.12} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:01 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:56:01 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=570 delta={'shoulder_pan': 2.62, 'shoulder_lift': -3.16, 'elbow_flex': -0.81, 'wrist_flex': 1.35, 'wrist_roll': -0.15, 'gripper': -0.63} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:02 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=600 delta={'shoulder_pan': -0.08, 'shoulder_lift': -1.49, 'elbow_flex': -1.75, 'wrist_flex': 0.29, 'wrist_roll': 0.55, 'gripper': 0.23} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:02 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:56:03 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=630 delta={'shoulder_pan': -0.58, 'shoulder_lift': -30.65, 'elbow_flex': 2.26, 'wrist_flex': 35.66, 'wrist_roll': -0.39, 'gripper': -0.3} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:04 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=660 delta={'shoulder_pan': 0.98, 'shoulder_lift': 24.19, 'elbow_flex': -20.13, 'wrist_flex': -2.26, 'wrist_roll': 0.31, 'gripper': 0.11} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:04 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:56:05 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=690 delta={'shoulder_pan': 1.67, 'shoulder_lift': -7.48, 'elbow_flex': -10.0, 'wrist_flex': 0.88, 'wrist_roll': 0.05, 'gripper': 0.4} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:06 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:56:06 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=720 delta={'shoulder_pan': 0.72, 'shoulder_lift': 9.17, 'elbow_flex': -3.88, 'wrist_flex': 0.29, 'wrist_roll': -0.26, 'gripper': -0.5} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:07 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=750 delta={'shoulder_pan': -0.96, 'shoulder_lift': 1.0, 'elbow_flex': -1.78, 'wrist_flex': -1.7, 'wrist_roll': 0.61, 'gripper': 0.62} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:08 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=780 delta={'shoulder_pan': -1.56, 'shoulder_lift': 4.78, 'elbow_flex': -3.48, 'wrist_flex': 1.09, 'wrist_roll': -0.46, 'gripper': -0.57} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:09 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=810 delta={'shoulder_pan': -0.37, 'shoulder_lift': 0.62, 'elbow_flex': -2.99, 'wrist_flex': 0.39, 'wrist_roll': -0.28, 'gripper': -0.5} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+[TRACE] step=840 delta={'shoulder_pan': 1.8, 'shoulder_lift': -27.07, 'elbow_flex': 9.03, 'wrist_flex': -2.2, 'wrist_roll': -0.05, 'gripper': -0.46} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:11 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=870 delta={'shoulder_pan': -0.69, 'shoulder_lift': -2.8, 'elbow_flex': -0.08, 'wrist_flex': 0.55, 'wrist_roll': 0.1, 'gripper': -0.08} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:12 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=900 delta={'shoulder_pan': -0.65, 'shoulder_lift': -31.55, 'elbow_flex': 13.4, 'wrist_flex': -4.4, 'wrist_roll': 0.1, 'gripper': -0.6} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:13 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=7, real_delay=8
+[TRACE] step=930 delta={'shoulder_pan': 0.16, 'shoulder_lift': -35.97, 'elbow_flex': 4.82, 'wrist_flex': 12.78, 'wrist_roll': 1.33, 'gripper': 0.19} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:13 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:56:14 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=960 delta={'shoulder_pan': 0.64, 'shoulder_lift': 3.57, 'elbow_flex': -5.51, 'wrist_flex': -1.83, 'wrist_roll': 0.41, 'gripper': -0.58} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:15 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=990 delta={'shoulder_pan': 0.14, 'shoulder_lift': 0.46, 'elbow_flex': -3.16, 'wrist_flex': -5.02, 'wrist_roll': -0.59, 'gripper': 0.21} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:16 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=7, real_delay=8
+[TRACE] step=1020 delta={'shoulder_pan': -0.52, 'shoulder_lift': 24.71, 'elbow_flex': -18.45, 'wrist_flex': -9.74, 'wrist_roll': 0.3, 'gripper': 0.73} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:17 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1050 delta={'shoulder_pan': -1.96, 'shoulder_lift': 7.11, 'elbow_flex': -1.38, 'wrist_flex': 0.24, 'wrist_roll': 0.52, 'gripper': 0.83} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:18 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1080 delta={'shoulder_pan': -0.38, 'shoulder_lift': 5.56, 'elbow_flex': -2.96, 'wrist_flex': -0.72, 'wrist_roll': -0.54, 'gripper': -1.07} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:19 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:56:19 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1110 delta={'shoulder_pan': 0.04, 'shoulder_lift': -12.29, 'elbow_flex': 1.44, 'wrist_flex': -1.48, 'wrist_roll': -0.47, 'gripper': -0.09} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:20 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1140 delta={'shoulder_pan': -0.02, 'shoulder_lift': -10.29, 'elbow_flex': -0.61, 'wrist_flex': 1.23, 'wrist_roll': 0.96, 'gripper': -0.28} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+[TRACE] step=1170 delta={'shoulder_pan': 0.64, 'shoulder_lift': -11.56, 'elbow_flex': -2.04, 'wrist_flex': 21.06, 'wrist_roll': -6.43, 'gripper': -0.19} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:22 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1200 delta={'shoulder_pan': -0.68, 'shoulder_lift': 0.59, 'elbow_flex': -0.83, 'wrist_flex': -4.59, 'wrist_roll': -0.02, 'gripper': 0.25} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:23 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:56:23 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1230 delta={'shoulder_pan': -0.94, 'shoulder_lift': -3.9, 'elbow_flex': -2.04, 'wrist_flex': 9.13, 'wrist_roll': -0.18, 'gripper': 0.46} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:24 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1260 delta={'shoulder_pan': -0.78, 'shoulder_lift': 0.08, 'elbow_flex': -0.41, 'wrist_flex': -16.01, 'wrist_roll': 0.54, 'gripper': 0.11} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:25 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1290 delta={'shoulder_pan': -3.37, 'shoulder_lift': 30.02, 'elbow_flex': -21.89, 'wrist_flex': -8.78, 'wrist_roll': 1.9, 'gripper': -0.84} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:26 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:56:26 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1320 delta={'shoulder_pan': 4.88, 'shoulder_lift': 6.27, 'elbow_flex': 0.5, 'wrist_flex': -3.96, 'wrist_roll': 4.06, 'gripper': -1.08} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+[TRACE] step=1350 delta={'shoulder_pan': 8.88, 'shoulder_lift': -11.8, 'elbow_flex': 14.09, 'wrist_flex': -7.31, 'wrist_roll': 0.88, 'gripper': -0.56} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:28 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:56:28 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1380 delta={'shoulder_pan': -0.81, 'shoulder_lift': 16.3, 'elbow_flex': -3.78, 'wrist_flex': -2.11, 'wrist_roll': 1.15, 'gripper': -0.16} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:29 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1410 delta={'shoulder_pan': 0.0, 'shoulder_lift': -0.99, 'elbow_flex': -1.77, 'wrist_flex': -4.94, 'wrist_roll': -0.4, 'gripper': -0.41} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:30 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1440 delta={'shoulder_pan': -2.3, 'shoulder_lift': 21.72, 'elbow_flex': -15.9, 'wrist_flex': 3.99, 'wrist_roll': -0.83, 'gripper': -0.63} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+[TRACE] step=1470 delta={'shoulder_pan': -0.93, 'shoulder_lift': -3.77, 'elbow_flex': 1.13, 'wrist_flex': -4.22, 'wrist_roll': -0.32, 'gripper': 1.51} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:32 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:56:32 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1500 delta={'shoulder_pan': 0.61, 'shoulder_lift': -4.72, 'elbow_flex': 0.28, 'wrist_flex': 0.45, 'wrist_roll': 0.34, 'gripper': 0.37} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:33 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:56:33 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1530 delta={'shoulder_pan': 2.17, 'shoulder_lift': -28.53, 'elbow_flex': 4.96, 'wrist_flex': 4.72, 'wrist_roll': -0.15, 'gripper': 0.39} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:34 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1560 delta={'shoulder_pan': -0.48, 'shoulder_lift': -21.07, 'elbow_flex': 0.41, 'wrist_flex': 9.77, 'wrist_roll': 0.07, 'gripper': -0.35} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:35 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:56:35 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1590 delta={'shoulder_pan': -0.44, 'shoulder_lift': -1.99, 'elbow_flex': 2.52, 'wrist_flex': 0.11, 'wrist_roll': 1.15, 'gripper': 0.25} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:36 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1620 delta={'shoulder_pan': -0.54, 'shoulder_lift': 0.17, 'elbow_flex': 0.85, 'wrist_flex': -1.78, 'wrist_roll': 2.71, 'gripper': 0.28} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:37 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1650 delta={'shoulder_pan': 2.86, 'shoulder_lift': 13.25, 'elbow_flex': 0.34, 'wrist_flex': -16.36, 'wrist_roll': 4.53, 'gripper': -0.0} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+[TRACE] step=1680 delta={'shoulder_pan': -0.21, 'shoulder_lift': 9.5, 'elbow_flex': -6.97, 'wrist_flex': -2.65, 'wrist_roll': -0.98, 'gripper': 0.39} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+WARNING 2026-09-10 21:56:39 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+WARNING 2026-09-10 21:56:39 on_queue.py:239 Indexes diff is not equal to real delay. indexes_diff=6, real_delay=7
+[TRACE] step=1710 delta={'shoulder_pan': 0.68, 'shoulder_lift': 4.86, 'elbow_flex': -1.69, 'wrist_flex': -16.92, 'wrist_roll': -4.27, 'gripper': 0.29} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+[TRACE] step=1740 delta={'shoulder_pan': 1.73, 'shoulder_lift': -0.94, 'elbow_flex': -2.76, 'wrist_flex': 2.71, 'wrist_roll': 0.14, 'gripper': 0.04} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+INFO 2026-09-10 21:56:41 gies/base.py:59 Duration limit reached (60s)
+INFO 2026-09-10 21:56:41 ies/core.py:122 Stopping inference engine...
+INFO 2026-09-10 21:56:41 ence/rtc.py:216 Stopping RTC inference thread...
+INFO 2026-09-10 21:56:41 ence/rtc.py:224 RTC inference thread stopped
+INFO 2026-09-10 21:56:41 ies/core.py:127 Returning robot to initial position before shutdown...
+[TRACE] step=1770 delta={'shoulder_pan': -0.64, 'shoulder_lift': -4.46, 'elbow_flex': 2.07, 'wrist_flex': 3.0, 'wrist_roll': -0.31, 'gripper': 0.09} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+[TRACE] step=1800 delta={'shoulder_pan': -2.77, 'shoulder_lift': -19.34, 'elbow_flex': 8.98, 'wrist_flex': 13.01, 'wrist_roll': -1.33, 'gripper': 0.37} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+[TRACE] step=1830 delta={'shoulder_pan': -4.89, 'shoulder_lift': -34.21, 'elbow_flex': 15.89, 'wrist_flex': 23.01, 'wrist_roll': -2.35, 'gripper': 0.65} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+[TRACE] step=1860 delta={'shoulder_pan': -7.02, 'shoulder_lift': -49.09, 'elbow_flex': 22.8, 'wrist_flex': 33.01, 'wrist_roll': -3.37, 'gripper': 0.94} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+[TRACE] step=1890 delta={'shoulder_pan': -9.15, 'shoulder_lift': -63.96, 'elbow_flex': 29.71, 'wrist_flex': 43.02, 'wrist_roll': -4.39, 'gripper': 1.22} torque={'shoulder_pan': 1, 'shoulder_lift': 1, 'elbow_flex': 1, 'wrist_flex': 1, 'wrist_roll': 1, 'gripper': 1}
+INFO 2026-09-10 21:56:45 ies/core.py:133 Disconnecting robot...
+[TRACE] Total action writes before disconnect: 1911
+INFO 2026-09-10 21:56:45 a_opencv.py:631 OpenCVCamera(/dev/v4l/by-id/usb-icSpring_icspring_camera_20240307110322-video-index0) disconnected.
+INFO 2026-09-10 21:56:45 a_opencv.py:631 OpenCVCamera(/dev/v4l/by-id/usb-SN0002_1080P_USB_Camera_44434000_P030C01_SN0002-video-index0) disconnected.
+INFO 2026-09-10 21:56:45 follower.py:238 oopslink_follower_arm SOFollower disconnected.
+INFO 2026-09-10 21:56:45 gies/base.py:85 Base strategy teardown complete
+INFO 2026-09-10 21:56:45 _rollout.py:242 Rollout finished

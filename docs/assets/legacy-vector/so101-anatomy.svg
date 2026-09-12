@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="t d">
+<title id="t">SO-ARM101结构示意</title><desc id="d">从底座到夹爪的五个运动关节和一个夹爪电机，并标出腕部相机与固定相机。</desc>
+<rect width="1200" height="680" rx="22" fill="#f4f7fb"/><g font-family="Arial,PingFang SC,Microsoft YaHei,sans-serif" fill="#17304d">
+<text x="42" y="55" font-size="30" font-weight="bold">SO-ARM101：五个关节 + 一个夹爪</text><text x="42" y="88" font-size="18">结构示意，不代表精确尺寸、关节零位或电气接线</text>
+<g stroke="#57708b" stroke-width="26" stroke-linecap="round" fill="none"><path d="M225 540L305 425L455 330L635 250L780 285"/></g>
+<g fill="#e6eef8" stroke="#2f5f91" stroke-width="5"><rect x="125" y="540" width="210" height="45" rx="8"/><circle cx="225" cy="540" r="28"/><circle cx="305" cy="425" r="28"/><circle cx="455" cy="330" r="28"/><circle cx="635" cy="250" r="28"/><circle cx="780" cy="285" r="28"/></g>
+<g stroke="#2f5f91" stroke-width="18" stroke-linecap="round"><path d="M780 285L845 310"/><path d="M845 290L900 258"/><path d="M845 330L900 362"/></g><rect x="716" y="205" width="55" height="34" rx="6" fill="#f2a65a"/><circle cx="743" cy="222" r="9" fill="#17304d"/>
+<g font-size="18"><text x="68" y="625">固定底座 / 桌夹</text><text x="92" y="460">ID 1  shoulder_pan</text><text x="302" y="475">ID 2  shoulder_lift</text><text x="420" y="390">ID 3  elbow_flex</text><text x="592" y="185">ID 4  wrist_flex</text><text x="750" y="230">ID 5  wrist_roll</text><text x="835" y="415">ID 6  gripper</text><text x="660" y="170">腕部相机</text></g>
+<g stroke="#9aafc4" stroke-width="2"><path d="M172 600L207 562"/><path d="M175 445L212 538"/><path d="M380 460L320 438"/><path d="M485 372L463 354"/><path d="M660 190L642 225"/><path d="M813 234L791 266"/><path d="M863 396L857 349"/></g>
+<g transform="translate(950 135)"><rect width="150" height="95" rx="12" fill="#fff" stroke="#9aafc4" stroke-width="3"/><circle cx="75" cy="48" r="25" fill="#dfeaf5" stroke="#2f5f91" stroke-width="4"/><circle cx="75" cy="48" r="9" fill="#17304d"/><path d="M55 95L40 145M95 95L110 145" stroke="#57708b" stroke-width="8"/><text x="10" y="178" font-size="18">固定 side 相机</text><path d="M20 200H135" stroke="#9aafc4" stroke-width="2"/></g>
+<rect x="934" y="390" width="218" height="155" rx="12" fill="#fff" stroke="#bbcbdc" stroke-width="2"/><text x="955" y="425" font-size="19" font-weight="bold">动作向量顺序</text><text x="955" y="458" font-size="17">[肩转，肩抬，肘，</text><text x="955" y="486" font-size="17"> 腕俯仰，腕旋转，</text><text x="955" y="514" font-size="17"> 夹爪开合]</text>
+</g></svg>

@@ -30,3 +30,17 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Local experiment data and credentials (never publish these by accident)
+config/lab.env
+.venv*/
+__pycache__/
+*.pyc
+reports/
+models/
+datasets/
+secrets/
+*.safetensors
+*.zip
+*.tar.gz
+.DS_Store

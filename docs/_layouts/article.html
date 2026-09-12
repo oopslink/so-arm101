@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090909">
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <title>{{ page.title }} · {{ site.title }}</title>
+    <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+  </head>
+  <body class="article-page">
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="返回首页">
+        <span class="brand-mark" aria-hidden="true"><i></i></span>
+        <span>SO·101 <em>LAB</em></span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="{{ '/01-beginner-guide.html' | relative_url }}">知识总结</a>
+        <a href="{{ '/02-experiment-log.html' | relative_url }}">实验记录</a>
+        <a href="https://github.com/oopslink/so-arm101" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </nav>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">目录</button>
+    </header>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <a href="{{ '/' | relative_url }}">首页</a>
+      <a href="{{ '/01-beginner-guide.html' | relative_url }}">知识总结</a>
+      <a href="{{ '/02-experiment-log.html' | relative_url }}">实验记录</a>
+      <div class="mobile-toc" id="mobileTocList"></div>
+    </div>
+
+    <div class="article-shell">
+      <aside class="article-sidebar" aria-label="文章目录">
+        <a class="back-home" href="{{ '/' | relative_url }}">← 返回项目首页</a>
+        <p class="eyebrow">ON THIS PAGE</p>
+        <nav id="tocList" class="toc"></nav>
+      </aside>
+
+      <main class="article-main">
+        <header class="article-hero">
+          <span class="tag">{{ page.section_label }}</span>
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.subtitle }}</p>
+          <div class="article-meta"><span>SO-ARM101</span><span>LeRobot</span><span>π0</span></div>
+        </header>
+        <article class="article-body" id="articleBody">
+          {{ content }}
+        </article>
+        <footer class="article-footer">
+          <p>从真实实验中整理，也会随着下一轮实践继续更新。</p>
+          {% if page.section_label == '知识总结' %}
+          <a class="button primary" href="{{ '/02-experiment-log.html' | relative_url }}">继续阅读实验记录 →</a>
+          {% else %}
+          <a class="button primary" href="{{ '/01-beginner-guide.html' | relative_url }}">返回知识总结 →</a>
+          {% endif %}
+        </footer>
+      </main>
+
+      <aside class="article-rail" aria-label="阅读信息">
+        <div class="rail-card">
+          <span class="rail-label">READING</span>
+          <strong id="readingTime">—</strong>
+          <small>预计阅读时间</small>
+        </div>
+        <a class="rail-card rail-link" href="{{ '/assets/demo.mp4' | relative_url }}">观看成品视频 <span>↗</span></a>
+      </aside>
+    </div>
+
+    <button class="back-to-top" type="button" aria-label="返回顶部">↑</button>
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="图片预览" hidden>
+      <button type="button" aria-label="关闭图片预览">×</button><img alt="">
+    </div>
+    <script src="{{ '/assets/site.js' | relative_url }}"></script>
+  </body>
+</html>

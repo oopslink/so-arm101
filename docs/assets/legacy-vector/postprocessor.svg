@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="460" viewBox="0 0 1100 460" role="img" aria-labelledby="title desc">
+<title id="title">后处理配置决定动作量纲</title><desc id="desc">输出零经过错误处理仍为零，正确处理恢复到训练动作均值。本图为数学示意，不是运动指令。</desc>
+<rect width="1100" height="460" rx="18" fill="#f5f7fb"/>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#17304d">
+<text x="35" y="45" font-size="25" font-weight="bold">权重能加载 ≠ 动作能正确下发</text>
+<rect x="35" y="85" width="1030" height="80" rx="10" fill="#e0eafa"/>
+<text x="55" y="118" font-size="20">例：肩抬升 action mean ≈ 45.90°，std ≈ 42.69°，模型输出 z = 0</text>
+<text x="55" y="148" font-size="17">这是训练统计的数学示例，不是建议把机械臂直接驱动到此角度。</text>
+<rect x="35" y="190" width="500" height="170" rx="12" fill="#ffe8e4"/>
+<rect x="565" y="190" width="500" height="170" rx="12" fill="#e1f3e9"/>
+<g font-size="21" font-weight="bold"><text x="55" y="228">错误：用基础模型空模板覆盖</text><text x="585" y="228">正确：加载本次训练的统计</text></g>
+<g font-size="18"><text x="55" y="270">features = {}，没有 state_file 引用</text><text x="55" y="309">z = 0 → 未还原量纲 → 约 0° 目标</text><text x="585" y="270">action [6] + state_file → 训练统计</text><text x="585" y="309">z × std + mean → 45.90° 目标</text></g>
+<text x="35" y="410" font-size="19">发布门禁：验证 0 → mean、±1 → mean ± std，并验证本地 tokenizer。</text>
+</g></svg>

@@ -1,0 +1,15 @@
+# 学习方法配图修订记录
+
+2026-09-12，使用内置 imagegen；参考原 `traditional-vs-imitation-learning.png` 的3D风格、SO-ARM101结构与虎头木鱼造型。实拍照片未修改。
+
+## 总览图最终提示词
+
+Use case: infographic-diagram. Edit target: provided existing illustration. Redesign its comparison layout to accurately distinguish human-designed policy from learned policy while preserving semi-realistic 3D educational style, pale blue background, cream tabletop, green cutting mats, cream SO101 open printed arms, black servos and black pads inside long white gripper fingers, wrist PCB camera, orange tiger-head wooden fish with ears/mouth slit, wooden mallet with cream head. Wide landscape. Chinese text large and exact. Title "机器人怎样获得操作策略". Top hierarchical two branches: left group blue heading "人工设计策略", right larger group orange heading "从经验学习策略" containing two equally ranked panels "模仿学习 IL" and "强化学习 RL". Left show rule cards/path nodes → arm; labels "人写规则与规划". IL show human teleoperation → demonstration frames → neural policy, label "专家示范 → 学习动作". RL show neural policy → robot interaction with task object → reward icon → curved arrow back to neural policy, label "经验与奖励 → 优化策略". Distinct clear dashed arrow IL policy toward RL policy labelled "可选：示范初始化". Bottom all three converge to common strip "共同执行层：限速、限位、停机、舵机闭环" and controller/arm. Footer "可组合，不是三选一". Not three peer top-level categories: IL and RL must be inside single learned-strategy container. Keep diagrams spacious, minimal text, no fabricated success metrics. This is a conceptual comparison not historical claim that RL was used.
+
+局部校正：保持整图不变，将手掌停机图标下方文字改为“停机”，关节行程图标下方文字改为“限位”。最终文件：`traditional-vs-imitation-learning.png`。
+
+## IL与RL关系图提示词
+
+Use case: infographic-diagram. Supporting style/physical reference: supplied illustration. Create a NEW companion wide landscape educational diagram in same soft semi-realistic 3D cream white SO101 arm / exposed black servo / long white gripper fingers with black inner pads / wrist PCB camera, green cutting mat, orange tiger-head wooden fish with ears, mouth slit and wood mallet cream head. Pale blue and cream background, ample whitespace, large accurate Chinese labels. Title "模仿学习与强化学习：目标不同，可以结合". Three stages horizontally. LEFT orange card "专家示范" show human operating leader and small image dataset, solid arrow labeled "模仿学习 IL" to CENTER neural-network policy card "初始策略". Center leads down to arm performing task on mat labeled "部署与评估". From evaluation two clearly separate feedback routes: orange arrow via card "人工纠错示范" returns to IL training arrow, and optional dashed blue arrow to RIGHT green card "经验 + 奖励", onward arrow labelled "强化学习 RL" to policy card "优化后的策略". RL feedback loop within right: policy → interaction → reward → training → policy. Keep all arrows legible no spaghetti. Minimal labels exact. Small footer two lines: "IL：学习专家怎样做    RL：优化长期回报" and "本实验仅使用 IL；RL 是可选扩展，不是必经阶段". No success guarantee; no live robot random unsafe action. No extraneous text, no math, no misleading mandatory linear IL then RL.
+
+最终文件：`imitation-and-reinforcement-learning.png`。图中只展示一种可选组合，不表示RL必须以IL开始；图注补充了离线经验和其他初始化的可能性。

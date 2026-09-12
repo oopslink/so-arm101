@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470" role="img" aria-labelledby="title desc">
+<title id="title">SO-ARM101 实验全流程</title><desc id="desc">Spark采集验收，Mac中转，Featurize训练，校验发布包，通过私有HF回到Spark部署。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0L10 4L0 8" fill="#57708b"/></marker></defs>
+<rect width="1100" height="470" rx="18" fill="#f4f7fb"/>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" fill="#17304d">
+<text x="40" y="45" font-size="25" font-weight="bold">从人的演示，到机器人的动作</text>
+<g fill="white" stroke="#bbcbdc" stroke-width="2"><rect x="40" y="85" width="230" height="140" rx="12"/><rect x="315" y="85" width="220" height="140" rx="12"/><rect x="580" y="85" width="230" height="140" rx="12"/><rect x="855" y="85" width="205" height="140" rx="12"/><rect x="40" y="300" width="315" height="125" rx="12"/><rect x="405" y="300" width="310" height="125" rx="12"/><rect x="765" y="300" width="295" height="125" rx="12"/></g>
+<g font-size="20" font-weight="bold"><text x="60" y="120">① Spark：示范</text><text x="335" y="120">② 检查与合并</text><text x="600" y="120">③ Mac：中转</text><text x="875" y="120">④ 云端：训练</text><text x="60" y="335">⑦ Spark：分级验收</text><text x="425" y="335">⑥ 私有 HF：发布</text><text x="785" y="335">⑤ 打包与离线校验</text></g>
+<g font-size="17"><text x="60" y="157">leader → follower</text><text x="60" y="190">双摄像头 + 状态 + 动作</text><text x="335" y="157">独立批次，逐批验收</text><text x="335" y="190">索引 / 视频 / 统计一致</text><text x="600" y="157">上传合并数据包</text><text x="600" y="190">数据就绪后再租 GPU</text><text x="875" y="157">PI0 微调</text><text x="875" y="190">本地日志与 CSV</text><text x="60" y="370">离线预测 → 单条回放</text><text x="60" y="400">短时真机 → 完整任务</text><text x="425" y="370">固定 commit，完整下载校验</text><text x="425" y="400">确认上传后退还云实例</text><text x="785" y="370">权重 + tokenizer + 处理器</text><text x="785" y="400">统计文件必须真正被使用</text></g></g>
+<g stroke="#57708b" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M270 155H310"/><path d="M535 155H575"/><path d="M810 155H850"/><path d="M958 225V290"/><path d="M765 363H723"/><path d="M405 363H363"/></g>
+</svg>

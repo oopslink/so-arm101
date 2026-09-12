@@ -1,0 +1,11 @@
+title: SO-101 Lab
+description: SO-ARM101、LeRobot 与 π0 机器人学习实践
+lang: zh-CN
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: pretty
+exclude:
+  - assets/README.md
+  - assets/learning-methods-prompts.md
