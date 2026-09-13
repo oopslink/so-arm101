@@ -1,0 +1,1 @@
+本文图片由当前 MuJoCo 场景直接渲染，2026-09-13。tabletop 为固定摆放；robot-layout/side/wrist 为木杆初始化在夹指之间时的场景；contact-grasp 为闭合、提起后的实际仿真帧。尺寸与布置读取 simulation/configs/tabletop-reference.json，物理参数读取 grasp-physics.json。图片不是实机照片，也不是学习策略的结果。

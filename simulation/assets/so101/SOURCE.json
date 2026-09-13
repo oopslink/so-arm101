@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/TheRobotStudio/SO-ARM100",
+  "commit": "eecbe3e0a9ebb23e25ad7b2759b03884c6660903",
+  "directory": "Simulation/SO101",
+  "license": "Apache-2.0",
+  "changes": "None to vendored files. Task geometry is added at runtime by scene.py."
+}

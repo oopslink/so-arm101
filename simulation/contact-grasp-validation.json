@@ -1,0 +1,44 @@
+{
+  "head_lift_m": 0.039671099902361895,
+  "max_relative_drift_m": 0.00047565070330824247,
+  "min_pad_normal_force_N": {
+    "fixed_pad": 8.057498992191132,
+    "moving_pad": 7.877254849435823
+  },
+  "held_gripper_angle_rad": -0.1558023863867276,
+  "no_attachment": true,
+  "tap_contact": true,
+  "tap_impulse_Ns": 0.053116058790717964,
+  "post_tap_pad_force_N": {
+    "fixed_pad": 8.344275934447687,
+    "moving_pad": 8.018274672496176
+  },
+  "post_tap_relative_drift_m": 0.0007267637956297448,
+  "release_drop_m": 0.0938354091581875,
+  "passed": true,
+  "physics": {
+    "status": "simulation_engineering_parameters_not_hardware_identified",
+    "physics_timestep": 0.002,
+    "friction": [
+      1.0,
+      0.005,
+      0.0001
+    ],
+    "handle_mass": 0.012,
+    "head_mass": 0.008,
+    "gripper_kp": 80.0,
+    "gripper_kv": 1.0,
+    "gripper_torque_limit": 0.4,
+    "close_angle": -0.1745,
+    "open_angle": 0.4,
+    "initial_angle": -0.08,
+    "pad_half_size": [
+      0.0015,
+      0.007,
+      0.014
+    ],
+    "notes": "Free rigid mallet, no weld or grasp constraint. Two convex finger collision hulls are replaced by explicit backing boxes and compliant pad boxes. Visual meshes are unchanged. Starting rod is initialized between fingers, not picked from the plate."
+  },
+  "scope": "contact script initialized between fingers; no table pickup or RL training",
+  "tests_passed": 17
+}

@@ -1,0 +1,98 @@
+{
+  "status": "user_dimensions_with_estimated_shape_and_placement",
+  "units": "metres",
+  "reference": "assets/tabletop/reference/05-assembled.jpg",
+  "coordinate_system": "plate centre x/y; x along long side, tiger on positive x (robot right after -90 degree stage rotation); tiger faces negative y; handle extends negative y; z=0 is mat top",
+  "plate": {
+    "length": 0.13,
+    "width": 0.07,
+    "thickness": 0.008,
+    "round_pad_side": 1
+  },
+  "fish": {
+    "width": 0.06,
+    "depth": 0.06,
+    "height": 0.055,
+    "centre_xy": [
+      0.03,
+      0
+    ]
+  },
+  "mallet": {
+    "handle_length": 0.1,
+    "handle_diameter": 0.005,
+    "head_radius": 0.006,
+    "head_length": 0.016,
+    "head_xy": [
+      -0.035,
+      -0.005
+    ],
+    "handle_direction_y": -1
+  },
+  "mat": {
+    "length": 0.45,
+    "width": 0.3,
+    "grid_spacing": 0.01
+  },
+  "notes": [
+    "Photo 5 confirmed by user as the actual initial arrangement.",
+    "Dimensions are stored in metres. White head axial length remains estimated; the supplied radius is used in both transverse directions.",
+    "Rod geometry is 10 cm long including the small portion overlapping the head; insertion depth is unmeasured.",
+    "Object offsets, orientation, decorative details and mat dimensions are estimates.",
+    "No mass, friction, restitution, strike point or robot-to-plate transform has been measured.",
+    "Standard layout and two-camera arrangement confirmed by user photo 06; rod points toward robot. Camera and robot transforms remain estimates.",
+    "User correction: fish on robot right when facing the table (+world x forward, -world y right); mirror fish/mallet lateral offsets, retain rod direction toward robot."
+  ],
+  "initial_layout_confirmed": true,
+  "dimension_sources": {
+    "plate": "user measured 13 x 7 x 0.8 cm",
+    "fish": "user measured 6 x 6 x 5.5 cm",
+    "mallet.handle_length": "user 10 cm; rod length, not overall mallet length",
+    "mallet.handle_diameter": "user 0.5 cm interpreted as rod diameter",
+    "mallet.head_radius": "user 0.6 cm; transverse radius",
+    "mallet.head_length": "estimated 1.6 cm long axis retaining approximate photo aspect ratio; not user measured",
+    "fish.centre_xy": "estimated arrangement within measured plate",
+    "mallet.head_xy": "estimated arrangement within measured plate",
+    "mat": "photo estimate, not user measured",
+    "mallet.handle_direction_y": "user correction: reverse handle direction; head position unchanged"
+  },
+  "robot_layout": {
+    "plate_position": [
+      0.28,
+      0,
+      0
+    ],
+    "plate_yaw_degrees": -90,
+    "status": "orientation from user photo; translation estimated, not calibrated"
+  },
+  "cameras": {
+    "side": {
+      "position": [
+        0.22,
+        -0.3,
+        0.2
+      ],
+      "look_at": [
+        0.25,
+        0,
+        0.06
+      ],
+      "fovy": 55
+    },
+    "wrist": {
+      "parent_body": "gripper",
+      "position": [
+        0,
+        -0.04,
+        -0.035
+      ],
+      "look_at": [
+        -0.0079,
+        0,
+        -0.2
+      ],
+      "fovy": 70
+    },
+    "status": "estimated extrinsics and field of view; not calibrated; wrist coordinates in gripper frame"
+  }
+}

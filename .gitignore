@@ -44,3 +44,8 @@ secrets/
 *.zip
 *.tar.gz
 .DS_Store
+
+# Local simulation outputs
+simulation/runs/
+*.egg-info/
+.pytest_cache/

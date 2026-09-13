@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wooden-fish-rl"
+version = "0.1.0"
+description = "SO-101 single-tap simulation baseline"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "mujoco==3.13.0", "gymnasium==1.3.0", "stable-baselines3==2.9.0",
+  "numpy==2.5.3", "tensorboard==2.21.0", "imageio==2.37.4",
+  "imageio-ffmpeg==0.6.0"
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1"]
+
+[tool.setuptools]
+packages = ["wooden_fish"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
