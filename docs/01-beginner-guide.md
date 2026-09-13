@@ -1,12 +1,12 @@
 ---
 layout: article
-title: 让机械臂学会敲木鱼
+title: 物理AI 敲赛博木鱼
 subtitle: SO-ARM101、LeRobot 与 VLA 的知识总结和经验分享
 section_label: 知识总结
 description: 从机器人学习通识、硬件校准和数据采集，到 π0 微调与真机部署的完整经验分享。
 ---
 
-# 让机械臂学会敲木鱼：SO-ARM101、LeRobot 与 VLA 的知识总结和经验分享
+# 物理AI 敲赛博木鱼：SO-ARM101、LeRobot 与 VLA 的知识总结和经验分享
 
 > 这次我们用 SO-ARM101 和 π0 尝试让机械臂完成抓棒、敲木鱼和放回。本文围绕这次实践，整理机器人学习的基本概念，以及环境、数据、训练和部署中的经验。
 >
