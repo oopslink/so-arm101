@@ -1,0 +1,3137 @@
+[
+  {
+    "run": "robot-20260917-203612-369271",
+    "commands": 501,
+    "positions": 251,
+    "errors": [],
+    "start_s": 3422.562600706,
+    "end_s": 3432.562405268,
+    "duration_s": 9.999804562000008,
+    "effective_hz": 50.00097720909834,
+    "max_interval_ms": 21.345726000163268,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": -0.04395604395604396,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 1.9594594594594597
+    },
+    "max_joint_change_deg": 0.0,
+    "command_increment_p99_deg": 0.0,
+    "nonzero_command_increments_below_encoder_tick_pct": null,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.26373626373626374,
+      "shoulder_lift": 0.5274725274725275,
+      "elbow_flex": 0.5274725274725275,
+      "wrist_flex": 0.5274725274725275,
+      "wrist_roll": 0.5274725274725275
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.2637362637362639,
+      "shoulder_lift": 0.5274725274725278,
+      "elbow_flex": 0.5274725274725278,
+      "wrist_flex": 0.5274725274725278,
+      "wrist_roll": 0.5274725274725278
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -0.26373626373626374,
+      "shoulder_lift": 0.5274725274725275,
+      "elbow_flex": -0.5274725274725275,
+      "wrist_flex": -0.5714285714285714,
+      "wrist_roll": 0.4835164835164835,
+      "gripper": 2.4324324324324325
+    }
+  },
+  {
+    "run": "robot-20260917-203738-085275",
+    "commands": 0,
+    "positions": 0,
+    "errors": []
+  },
+  {
+    "run": "robot-20260917-203801-891858",
+    "commands": 189,
+    "positions": 95,
+    "errors": [],
+    "start_s": 3533.476069544,
+    "end_s": 3537.234546814,
+    "duration_s": 3.758477270000185,
+    "effective_hz": 50.0202572729649,
+    "max_interval_ms": 21.084324000185006,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 8,
+      "elbow_flex": 0.0,
+      "wrist_flex": -0.04395604395604396,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 1.9594594594594597
+    },
+    "max_joint_change_deg": 7.999999996899098,
+    "command_increment_p99_deg": 0.0796132294530387,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.26373626373626374,
+      "shoulder_lift": 1.3429424455413574,
+      "elbow_flex": 0.5274725274725275,
+      "wrist_flex": 0.7032967032967034,
+      "wrist_roll": 0.6153846153846153
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.26373626373626397,
+      "shoulder_lift": 0.9847030096388987,
+      "elbow_flex": 0.39860056840579816,
+      "wrist_flex": 0.5783801039998165,
+      "wrist_roll": 0.5557853443877026
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0879120879120876,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -0.26373626373626374,
+      "shoulder_lift": 6.857142857142857,
+      "elbow_flex": -0.17582417582417584,
+      "wrist_flex": -0.7472527472527473,
+      "wrist_roll": 0.5714285714285714,
+      "gripper": 2.4324324324324325
+    }
+  },
+  {
+    "run": "robot-20260917-203830-865975",
+    "commands": 189,
+    "positions": 95,
+    "errors": [],
+    "start_s": 3562.424264835,
+    "end_s": 3566.1831742,
+    "duration_s": 3.7589093649999086,
+    "effective_hz": 50.0145073330345,
+    "max_interval_ms": 20.76485199995659,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0.0,
+      "wrist_flex": -0.04395604395604396,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 1.9594594594594597
+    },
+    "max_joint_change_deg": 7.999999998019829,
+    "command_increment_p99_deg": 0.07952867133674073,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.26373626373626374,
+      "shoulder_lift": 1.1428571408769725,
+      "elbow_flex": 0.43956043956043955,
+      "wrist_flex": 0.7032967032967034,
+      "wrist_roll": 0.6153846153846153
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.26373626373626397,
+      "shoulder_lift": 0.6160166438202105,
+      "elbow_flex": 0.30653338716116846,
+      "wrist_flex": 0.5487884964493104,
+      "wrist_roll": 0.615384615384615
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -0.26373626373626374,
+      "shoulder_lift": 0.5274725274725275,
+      "elbow_flex": -0.43956043956043955,
+      "wrist_flex": -0.3076923076923077,
+      "wrist_roll": 0.5714285714285714,
+      "gripper": 2.4324324324324325
+    }
+  },
+  {
+    "run": "robot-20260917-204221-694533",
+    "commands": 0,
+    "positions": 0,
+    "errors": []
+  },
+  {
+    "run": "robot-20260917-204304-329716",
+    "commands": 470,
+    "positions": 235,
+    "errors": [],
+    "start_s": 3835.916746586,
+    "end_s": 3845.296741551,
+    "duration_s": 9.37999496500015,
+    "effective_hz": 50.00002683903279,
+    "max_interval_ms": 21.272644999953627,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 20,
+      "elbow_flex": -14,
+      "wrist_flex": -10,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 1.9594594594594597
+    },
+    "max_joint_change_deg": 19.99999999973902,
+    "command_increment_p99_deg": 0.07942043066256843,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.26373626373626374,
+      "shoulder_lift": 1.187791419203756,
+      "elbow_flex": 2.8412590894416354,
+      "wrist_flex": 1.0576790387144364,
+      "wrist_roll": 0.6153846153846153
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.26373626373626413,
+      "shoulder_lift": 0.7335921334270341,
+      "elbow_flex": 2.100311221070155,
+      "wrist_flex": 0.7271958580674902,
+      "wrist_roll": 0.4899774504918148
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -0.26373626373626374,
+      "shoulder_lift": 19.428571428571427,
+      "elbow_flex": -11.340659340659341,
+      "wrist_flex": -9.186813186813186,
+      "wrist_roll": 0.21978021978021978,
+      "gripper": 2.4324324324324325
+    }
+  },
+  {
+    "run": "robot-20260917-204418-060046",
+    "commands": 471,
+    "positions": 236,
+    "errors": [],
+    "start_s": 3909.706105841,
+    "end_s": 3919.105990896,
+    "duration_s": 9.39988505500014,
+    "effective_hz": 50.00061141705025,
+    "max_interval_ms": 20.998981000047934,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 40,
+      "elbow_flex": -28,
+      "wrist_flex": -20,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 1.9594594594594597
+    },
+    "max_joint_change_deg": 20.043956043734806,
+    "command_increment_p99_deg": 0.07959088982679727,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.26373626373626374,
+      "shoulder_lift": 0.9523360578647733,
+      "elbow_flex": 3.260958544048984,
+      "wrist_flex": 1.0713051906915574,
+      "wrist_roll": 0.26373626373626374
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.2637362637362641,
+      "shoulder_lift": 0.5720505526735424,
+      "elbow_flex": 2.7739443141768065,
+      "wrist_flex": 0.845481016345488,
+      "wrist_roll": 0.2637362637362641
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.2637362637362628,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -0.26373626373626374,
+      "shoulder_lift": 39.73626373626374,
+      "elbow_flex": -25.406593406593405,
+      "wrist_flex": -19.296703296703296,
+      "wrist_roll": 0.21978021978021978,
+      "gripper": 2.4324324324324325
+    }
+  },
+  {
+    "run": "robot-20260917-204518-757250",
+    "commands": 470,
+    "positions": 235,
+    "errors": [],
+    "start_s": 3970.329849633,
+    "end_s": 3979.708659147,
+    "duration_s": 9.378809514000295,
+    "effective_hz": 50.006346679703476,
+    "max_interval_ms": 21.039079999809474,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 20,
+      "elbow_flex": -14,
+      "wrist_flex": -10,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 1.9594594594594597
+    },
+    "max_joint_change_deg": 19.99999999880866,
+    "command_increment_p99_deg": 0.0794862500461872,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3516483516483517,
+      "shoulder_lift": 0.9646124497762045,
+      "elbow_flex": 2.6373626365260847,
+      "wrist_flex": 0.8904871839588999,
+      "wrist_roll": 0.26373626373626374
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.26504235863364317,
+      "shoulder_lift": 0.5212725321896999,
+      "elbow_flex": 1.1633901839647263,
+      "wrist_flex": 0.44384030204951314,
+      "wrist_roll": 0.19132082533688302
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.08791208791208792
+    },
+    "final_position": {
+      "shoulder_pan": -0.26373626373626374,
+      "shoulder_lift": 20.21978021978022,
+      "elbow_flex": -13.89010989010989,
+      "wrist_flex": -10.241758241758241,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 2.4324324324324325
+    }
+  },
+  {
+    "run": "robot-20260917-204641-860092",
+    "commands": 469,
+    "positions": 235,
+    "errors": [],
+    "start_s": 4053.449044171,
+    "end_s": 4062.808731873,
+    "duration_s": 9.359687701999974,
+    "effective_hz": 50.00166831421073,
+    "max_interval_ms": 21.198011000251427,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 1.9594594594594597
+    },
+    "max_joint_change_deg": 19.95604395582246,
+    "command_increment_p99_deg": 0.07946144785711905,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3516483516483517,
+      "shoulder_lift": 0.7266416361879031,
+      "elbow_flex": 0.9020098928364905,
+      "wrist_flex": 1.5869051038363287,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.2654762956591885,
+      "shoulder_lift": 0.41587426177658376,
+      "elbow_flex": 0.3758474488009298,
+      "wrist_flex": 0.5717372561538939,
+      "wrist_roll": 0.0993288233610605
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.08791208791208793,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -0.26373626373626374,
+      "shoulder_lift": 0.5274725274725275,
+      "elbow_flex": -0.5274725274725275,
+      "wrist_flex": -0.5714285714285714,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 2.4324324324324325
+    }
+  },
+  {
+    "run": "robot-20260917-205209-626458",
+    "commands": 0,
+    "positions": 0,
+    "errors": []
+  },
+  {
+    "run": "robot-20260917-205301-110604",
+    "commands": 564,
+    "positions": 282,
+    "errors": [],
+    "start_s": 4432.688008884,
+    "end_s": 4443.948474796,
+    "duration_s": 11.260465911999745,
+    "effective_hz": 49.99793120460829,
+    "max_interval_ms": 21.101641999848653,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": -15,
+      "shoulder_lift": 24,
+      "elbow_flex": -18,
+      "wrist_flex": -12,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 14
+    },
+    "max_joint_change_deg": 23.99999999980666,
+    "command_increment_p99_deg": 0.07943926020925013,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.7971783754170669,
+      "shoulder_lift": 1.226831831933479,
+      "elbow_flex": 3.099951911232081,
+      "wrist_flex": 1.146576193527343,
+      "wrist_roll": 0.26373626373626374
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.45119154513866294,
+      "shoulder_lift": 0.7262004868130553,
+      "elbow_flex": 2.1866058754849456,
+      "wrist_flex": 0.7560926785077678,
+      "wrist_roll": 0.16645606291272652
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0879120879120876,
+      "shoulder_lift": 0.26373626373626635,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -14.417582417582418,
+      "shoulder_lift": 23.736263736263737,
+      "elbow_flex": -15.296703296703297,
+      "wrist_flex": -11.208791208791208,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 13.716216216216214
+    }
+  },
+  {
+    "run": "robot-20260917-205848-611718",
+    "commands": 564,
+    "positions": 282,
+    "errors": [],
+    "start_s": 4780.197042484,
+    "end_s": 4791.456147208,
+    "duration_s": 11.25910472400028,
+    "effective_hz": 50.00397578680395,
+    "max_interval_ms": 21.26290500018513,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": -24,
+      "shoulder_lift": 48,
+      "elbow_flex": -36,
+      "wrist_flex": -24,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 13.986486486486486
+    },
+    "max_joint_change_deg": 23.999999999620627,
+    "command_increment_p99_deg": 0.07944607914371872,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.7230514581794907,
+      "shoulder_lift": 0.8831673757863499,
+      "elbow_flex": 3.3525791284261217,
+      "wrist_flex": 1.1369174867562712,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.453253467888795,
+      "shoulder_lift": 0.496856157423242,
+      "elbow_flex": 2.8957336416208506,
+      "wrist_flex": 0.8758446445823359,
+      "wrist_roll": 0.15600212831044621
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0879120879120876,
+      "shoulder_lift": 0.3516483516483504,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -23.384615384615383,
+      "shoulder_lift": 47.91208791208791,
+      "elbow_flex": -33.142857142857146,
+      "wrist_flex": -23.252747252747252,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 13.783783783783784
+    }
+  },
+  {
+    "run": "robot-20260917-205924-478748",
+    "commands": 564,
+    "positions": 282,
+    "errors": [],
+    "start_s": 4816.061543023,
+    "end_s": 4827.320630683,
+    "duration_s": 11.25908765999975,
+    "effective_hz": 50.00405157161841,
+    "max_interval_ms": 21.343917999729456,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": -24.0,
+      "shoulder_lift": 72,
+      "elbow_flex": -54,
+      "wrist_flex": -32,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 13.986486486486486
+    },
+    "max_joint_change_deg": 23.999999999632927,
+    "command_increment_p99_deg": 0.0796662853455284,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.6153846153846168,
+      "shoulder_lift": 0.6199767181659226,
+      "elbow_flex": 3.344605495380229,
+      "wrist_flex": 1.0961958480321812,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5567191271055567,
+      "shoulder_lift": 0.3053226559794207,
+      "elbow_flex": 2.876018981711252,
+      "wrist_flex": 0.870515856246055,
+      "wrist_roll": 0.17582417582417623
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.3516483516483504,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.1758241758241752,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -23.47252747252747,
+      "shoulder_lift": 72.17582417582418,
+      "elbow_flex": -51.07692307692308,
+      "wrist_flex": -31.252747252747252,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 13.783783783783784
+    }
+  },
+  {
+    "run": "robot-20260917-210006-812581",
+    "commands": 517,
+    "positions": 259,
+    "errors": [],
+    "start_s": 4858.385353268,
+    "end_s": 4868.703624104,
+    "duration_s": 10.31827083600001,
+    "effective_hz": 50.00837913652139,
+    "max_interval_ms": 21.398854000835854,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": -18,
+      "shoulder_lift": 94,
+      "elbow_flex": -70,
+      "wrist_flex": -40,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 13.986486486486486
+    },
+    "max_joint_change_deg": 21.99999999906406,
+    "command_increment_p99_deg": 0.07960398960939016,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.8365910843956215,
+      "shoulder_lift": 0.4039344314069808,
+      "elbow_flex": 3.540978305087407,
+      "wrist_flex": 1.1422576823495803,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.48578107466427434,
+      "shoulder_lift": 0.20237201076800562,
+      "elbow_flex": 2.9362720907841995,
+      "wrist_flex": 0.8832130977757255,
+      "wrist_roll": 0.1758241758241762
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -18.54945054945055,
+      "shoulder_lift": 94.24175824175825,
+      "elbow_flex": -67.42857142857143,
+      "wrist_flex": -39.16483516483517,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 13.783783783783784
+    }
+  },
+  {
+    "run": "robot-20260917-210043-789103",
+    "commands": 190,
+    "positions": 95,
+    "errors": [],
+    "start_s": 4895.285030903,
+    "end_s": 4899.063577873,
+    "duration_s": 3.778546970000207,
+    "effective_hz": 50.01922736453099,
+    "max_interval_ms": 21.322809000594134,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": -14,
+      "shoulder_lift": 102,
+      "elbow_flex": -70.06593406593407,
+      "wrist_flex": -32,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 13.986486486486486
+    },
+    "max_joint_change_deg": 8.043956031734197,
+    "command_increment_p99_deg": 0.07987530998525585,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.8472156814775325,
+      "shoulder_lift": 0.26499537065052436,
+      "elbow_flex": 2.637362637362642,
+      "wrist_flex": 0.8791208668990294,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5497402284777252,
+      "shoulder_lift": 0.137973321203379,
+      "elbow_flex": 2.5649119326306167,
+      "wrist_flex": 0.5056104676490205,
+      "wrist_roll": 0.17582417582417564
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -14.593406593406593,
+      "shoulder_lift": 102.24175824175825,
+      "elbow_flex": -67.6043956043956,
+      "wrist_flex": -32.30769230769231,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 13.783783783783784
+    }
+  },
+  {
+    "run": "robot-20260917-210111-661328",
+    "commands": 235,
+    "positions": 118,
+    "errors": [],
+    "start_s": 4923.208310318,
+    "end_s": 4927.887936378,
+    "duration_s": 4.679626059999464,
+    "effective_hz": 50.00399540471548,
+    "max_interval_ms": 20.978683999601344,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": -13,
+      "shoulder_lift": 108,
+      "elbow_flex": -70.06593406593407,
+      "wrist_flex": -42,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 13.986486486486486
+    },
+    "max_joint_change_deg": 9.956043954978668,
+    "command_increment_p99_deg": 0.07943977762569346,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.6495088263005968,
+      "shoulder_lift": 0.3297197815386852,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 2.0969707212160102,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.4810230508370733,
+      "shoulder_lift": 0.1639612338083317,
+      "elbow_flex": 2.359567367881738,
+      "wrist_flex": 0.9126348504492592,
+      "wrist_roll": 0.17582417582417562
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -13.274725274725276,
+      "shoulder_lift": 108.3076923076923,
+      "elbow_flex": -67.86813186813187,
+      "wrist_flex": -41.18681318681319,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 13.783783783783784
+    }
+  },
+  {
+    "run": "robot-20260917-210147-431854",
+    "commands": 164,
+    "positions": 82,
+    "errors": [],
+    "start_s": 4958.996570158,
+    "end_s": 4962.256402427,
+    "duration_s": 3.259832268999162,
+    "effective_hz": 50.0025726937308,
+    "max_interval_ms": 20.922704000440717,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": -14,
+      "shoulder_lift": 112,
+      "elbow_flex": -70.06593406593407,
+      "wrist_flex": -49,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 13.986486486486486
+    },
+    "max_joint_change_deg": 6.934065931986908,
+    "command_increment_p99_deg": 0.07986189989413717,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5494502400572792,
+      "shoulder_lift": 0.35164835043586606,
+      "elbow_flex": 2.197802197802204,
+      "wrist_flex": 1.0810248498047699,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3520833546841578,
+      "shoulder_lift": 0.19592102727205044,
+      "elbow_flex": 2.197802197802205,
+      "wrist_flex": 0.8909747614099125,
+      "wrist_roll": 0.17582417582417564
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -13.45054945054945,
+      "shoulder_lift": 112.26373626373626,
+      "elbow_flex": -67.86813186813187,
+      "wrist_flex": -48.30769230769231,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 13.783783783783784
+    }
+  },
+  {
+    "run": "robot-20260917-210227-083706",
+    "commands": 151,
+    "positions": 76,
+    "errors": [],
+    "start_s": 4998.684503188,
+    "end_s": 5001.684565798,
+    "duration_s": 3.0000626099999863,
+    "effective_hz": 49.99895652177762,
+    "max_interval_ms": 20.943877000718203,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": -16,
+      "shoulder_lift": 114,
+      "elbow_flex": -70.06593406593407,
+      "wrist_flex": -49.010989010989015,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 8
+    },
+    "max_joint_change_deg": 1.9999999992473363,
+    "command_increment_p99_deg": 0.024793323190728956,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.7675968076888662,
+      "shoulder_lift": 0.3789395606823831,
+      "elbow_flex": 2.197802197802204,
+      "wrist_flex": 0.7032967032967079,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5403072712986721,
+      "shoulder_lift": 0.2115786781898282,
+      "elbow_flex": 2.197802197802205,
+      "wrist_flex": 0.7032967032967076,
+      "wrist_roll": 0.17582417582417564
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -15.472527472527473,
+      "shoulder_lift": 114.37362637362638,
+      "elbow_flex": -67.86813186813187,
+      "wrist_flex": -48.30769230769231,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 8.108108108108109
+    }
+  },
+  {
+    "run": "robot-20260917-210301-897802",
+    "commands": 151,
+    "positions": 76,
+    "errors": [],
+    "start_s": 5033.463426662,
+    "end_s": 5036.463205106,
+    "duration_s": 2.999778444000185,
+    "effective_hz": 50.00369287272296,
+    "max_interval_ms": 21.055416999843146,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": -16.0,
+      "shoulder_lift": 113.93406593406593,
+      "elbow_flex": -70.06593406593407,
+      "wrist_flex": -49.010989010989015,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 2
+    },
+    "max_joint_change_deg": 0.0,
+    "command_increment_p99_deg": 0.0,
+    "nonzero_command_increments_below_encoder_tick_pct": null,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725274,
+      "shoulder_lift": 0.4395604395604522,
+      "elbow_flex": 2.197802197802204,
+      "wrist_flex": 0.7032967032967079,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725275,
+      "shoulder_lift": 0.439560439560452,
+      "elbow_flex": 2.197802197802205,
+      "wrist_flex": 0.7032967032967076,
+      "wrist_roll": 0.17582417582417564
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -15.472527472527473,
+      "shoulder_lift": 114.37362637362638,
+      "elbow_flex": -67.86813186813187,
+      "wrist_flex": -48.30769230769231,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 2.4324324324324325
+    }
+  },
+  {
+    "run": "robot-20260917-210348-988346",
+    "commands": 237,
+    "positions": 119,
+    "errors": [],
+    "start_s": 5080.55510087,
+    "end_s": 5085.274584112,
+    "duration_s": 4.719483242000024,
+    "effective_hz": 50.005474730743586,
+    "max_interval_ms": 21.253164999507135,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": -16.0,
+      "shoulder_lift": 113.93406593406593,
+      "elbow_flex": -70.06593406593407,
+      "wrist_flex": -49.010989010989015,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 12
+    },
+    "max_joint_change_deg": 0.0,
+    "command_increment_p99_deg": 0.0,
+    "nonzero_command_increments_below_encoder_tick_pct": null,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725274,
+      "shoulder_lift": 0.4395604395604522,
+      "elbow_flex": 2.197802197802204,
+      "wrist_flex": 0.7032967032967079,
+      "wrist_roll": 0.26373626373626374
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725279,
+      "shoulder_lift": 0.4395604395604519,
+      "elbow_flex": 2.1978021978022055,
+      "wrist_flex": 0.7032967032967073,
+      "wrist_roll": 0.263736263736264
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -15.472527472527473,
+      "shoulder_lift": 114.37362637362638,
+      "elbow_flex": -67.86813186813187,
+      "wrist_flex": -48.30769230769231,
+      "wrist_roll": 0.21978021978021978,
+      "gripper": 11.756756756756758
+    }
+  },
+  {
+    "run": "robot-20260917-210427-962701",
+    "commands": 151,
+    "positions": 76,
+    "errors": [],
+    "start_s": 5119.52819857,
+    "end_s": 5122.528448639,
+    "duration_s": 3.000250068999776,
+    "effective_hz": 49.995832530722026,
+    "max_interval_ms": 21.04633599992667,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": -16.0,
+      "shoulder_lift": 117,
+      "elbow_flex": -70.06593406593407,
+      "wrist_flex": -46,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 11.95945945945946
+    },
+    "max_joint_change_deg": 3.065934064025342,
+    "command_increment_p99_deg": 0.03808263384268883,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725274,
+      "shoulder_lift": 0.43956043765172126,
+      "elbow_flex": 2.197802197802204,
+      "wrist_flex": 0.8055097444406769,
+      "wrist_roll": 0.26373626373626374
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5242818477698353,
+      "shoulder_lift": 0.2096572464827292,
+      "elbow_flex": 1.9435071104235155,
+      "wrist_flex": 0.54333394125335,
+      "wrist_roll": 0.26373626373626385
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -15.472527472527473,
+      "shoulder_lift": 116.92307692307692,
+      "elbow_flex": -68.74725274725274,
+      "wrist_flex": -46.37362637362637,
+      "wrist_roll": 0.21978021978021978,
+      "gripper": 11.756756756756758
+    }
+  },
+  {
+    "run": "robot-20260917-210510-138403",
+    "commands": 235,
+    "positions": 118,
+    "errors": [],
+    "start_s": 5161.684877132,
+    "end_s": 5166.36350015,
+    "duration_s": 4.678623017999598,
+    "effective_hz": 50.01471567590618,
+    "max_interval_ms": 21.261093000248366,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": -16.0,
+      "shoulder_lift": 116.92307692307692,
+      "elbow_flex": -70.06593406593407,
+      "wrist_flex": -46.02197802197802,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 2
+    },
+    "max_joint_change_deg": 0.0,
+    "command_increment_p99_deg": 0.0,
+    "nonzero_command_increments_below_encoder_tick_pct": null,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.615384615384615,
+      "shoulder_lift": 0.0879120879120876,
+      "elbow_flex": 1.3186813186813282,
+      "wrist_flex": 0.3516483516483504,
+      "wrist_roll": 0.26373626373626374
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5921152038851359,
+      "shoulder_lift": 0.08791208791208764,
+      "elbow_flex": 1.3186813186813298,
+      "wrist_flex": 0.24693487565583624,
+      "wrist_roll": 0.263736263736264
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0879120879120876,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -15.384615384615385,
+      "shoulder_lift": 117.01098901098901,
+      "elbow_flex": -68.74725274725274,
+      "wrist_flex": -46.02197802197802,
+      "wrist_roll": 0.21978021978021978,
+      "gripper": 4.391891891891892
+    }
+  },
+  {
+    "run": "robot-20260917-210551-620546",
+    "commands": 187,
+    "positions": 94,
+    "errors": [],
+    "start_s": 5203.196474269,
+    "end_s": 5206.916284262,
+    "duration_s": 3.7198099930001263,
+    "effective_hz": 50.00255398797562,
+    "max_interval_ms": 21.439494999867748,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": -16.0,
+      "shoulder_lift": 109,
+      "elbow_flex": -70.06593406593407,
+      "wrist_flex": -50,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 1.9594594594594597
+    },
+    "max_joint_change_deg": 7.923076921406533,
+    "command_increment_p99_deg": 0.07952025015023083,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.615384615384615,
+      "shoulder_lift": 3.490390016865234,
+      "elbow_flex": 1.4065934065934158,
+      "wrist_flex": 1.1811678209971745,
+      "wrist_roll": 0.26373626373626374
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5768345568216454,
+      "shoulder_lift": 2.5177724894262306,
+      "elbow_flex": 1.3708037400856723,
+      "wrist_flex": 0.7676599770292347,
+      "wrist_roll": 0.2637362637362639
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -15.472527472527473,
+      "shoulder_lift": 111.91208791208791,
+      "elbow_flex": -68.65934065934066,
+      "wrist_flex": -49.18681318681319,
+      "wrist_roll": 0.21978021978021978,
+      "gripper": 4.256756756756757
+    }
+  },
+  {
+    "run": "robot-20260917-210646-133226",
+    "commands": 472,
+    "positions": 236,
+    "errors": [],
+    "start_s": 5257.680410675,
+    "end_s": 5267.10010679,
+    "duration_s": 9.419696115000079,
+    "effective_hz": 50.00161302974221,
+    "max_interval_ms": 21.43750000050204,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": -16.0,
+      "shoulder_lift": 90,
+      "elbow_flex": -70.06593406593407,
+      "wrist_flex": -30,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 1.9594594594594597
+    },
+    "max_joint_change_deg": 20.065934065616744,
+    "command_increment_p99_deg": 0.07932707370269995,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725274,
+      "shoulder_lift": 3.5225086045476246,
+      "elbow_flex": 1.4945054945055034,
+      "wrist_flex": 0.9984367258358375,
+      "wrist_roll": 0.26373626373626374
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.520252315890818,
+      "shoulder_lift": 2.988870598151917,
+      "elbow_flex": 1.464558125353519,
+      "wrist_flex": 0.49211062713352466,
+      "wrist_roll": 0.22551649914508248
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": -15.472527472527473,
+      "shoulder_lift": 92.48351648351648,
+      "elbow_flex": -68.57142857142857,
+      "wrist_flex": -30.10989010989011,
+      "wrist_roll": 0.04395604395604396,
+      "gripper": 4.1891891891891895
+    }
+  },
+  {
+    "run": "robot-20260917-211019-687445",
+    "commands": 564,
+    "positions": 282,
+    "errors": [],
+    "start_s": 5471.265436391,
+    "end_s": 5482.525163125,
+    "duration_s": 11.259726734000651,
+    "effective_hz": 50.00121346639134,
+    "max_interval_ms": 21.14136599993799,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 8,
+      "shoulder_lift": 70,
+      "elbow_flex": -70.06593406593407,
+      "wrist_flex": -10,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 1.9594594594594597
+    },
+    "max_joint_change_deg": 23.999999999725013,
+    "command_increment_p99_deg": 0.07945174588465669,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 1.1321655916484152,
+      "shoulder_lift": 3.232479030323873,
+      "elbow_flex": 1.4945054945055034,
+      "wrist_flex": 0.708648528643339,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.6215711282580353,
+      "shoulder_lift": 2.3491137167089757,
+      "elbow_flex": 1.494505494505504,
+      "wrist_flex": 0.3707891421656785,
+      "wrist_roll": 0.11764398566694842
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.17582417582417698,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 7.648351648351649,
+      "shoulder_lift": 71.56043956043956,
+      "elbow_flex": -68.57142857142857,
+      "wrist_flex": -10.241758241758241,
+      "wrist_roll": -0.13186813186813187,
+      "gripper": 4.1891891891891895
+    }
+  },
+  {
+    "run": "robot-20260917-211112-394665",
+    "commands": 331,
+    "positions": 166,
+    "errors": [],
+    "start_s": 5523.951978778,
+    "end_s": 5530.551501217,
+    "duration_s": 6.599522438999884,
+    "effective_hz": 50.0036181481655,
+    "max_interval_ms": 21.180423999794584,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 10,
+      "shoulder_lift": 80,
+      "elbow_flex": -70.06593406593407,
+      "wrist_flex": 4,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 1.9594594594594597
+    },
+    "max_joint_change_deg": 14.065934065098261,
+    "command_increment_p99_deg": 0.07961557867895797,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.7320684888469344,
+      "shoulder_lift": 1.4945054939099975,
+      "elbow_flex": 1.4945054945055034,
+      "wrist_flex": 0.7555479100076841,
+      "wrist_roll": 0.0879120879120879
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.44315345569541686,
+      "shoulder_lift": 0.6535449626013732,
+      "elbow_flex": 1.4945054945055012,
+      "wrist_flex": 0.4227462668989354,
+      "wrist_roll": 0.08791208791208793
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 9.67032967032967,
+      "shoulder_lift": 79.91208791208791,
+      "elbow_flex": -68.57142857142857,
+      "wrist_flex": 3.6483516483516483,
+      "wrist_roll": -0.13186813186813187,
+      "gripper": 4.1891891891891895
+    }
+  },
+  {
+    "run": "robot-20260917-211200-145258",
+    "commands": 350,
+    "positions": 175,
+    "errors": [
+      "RuntimeError(\"Temperature threshold exceeded: {'shoulder_pan': 38, 'shoulder_lift': 41, 'elbow_flex': 44, 'wrist_flex': 39, 'wrist_roll': 38, 'gripper': 58}\")"
+    ],
+    "start_s": 5571.728228005,
+    "end_s": 5578.707503283,
+    "duration_s": 6.979275277999477,
+    "effective_hz": 50.00519195741432,
+    "max_interval_ms": 21.129689999725088,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 30,
+      "shoulder_lift": 70,
+      "elbow_flex": -70.06593406593407,
+      "wrist_flex": -6,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 1.9594594594594597
+    },
+    "max_joint_change_deg": 17.818795379602065,
+    "command_increment_p99_deg": 0.07977345173596745,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.9838956719517284,
+      "shoulder_lift": 2.201871750238297,
+      "elbow_flex": 1.4945054945055034,
+      "wrist_flex": 1.041256386753508,
+      "wrist_roll": 0.08791208791208792
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.6362315670514247,
+      "shoulder_lift": 1.519180498208177,
+      "elbow_flex": 1.494505494505501,
+      "wrist_flex": 0.725383260685734,
+      "wrist_roll": 0.08220065643681541
+    }
+  },
+  {
+    "run": "robot-20260917-211237-455113",
+    "commands": 0,
+    "positions": 0,
+    "errors": []
+  },
+  {
+    "run": "robot-20260917-211345-288284",
+    "commands": 0,
+    "positions": 0,
+    "errors": []
+  },
+  {
+    "run": "robot-20260917-211419-014494",
+    "commands": 166,
+    "positions": 83,
+    "errors": [],
+    "start_s": 5710.570070325,
+    "end_s": 5713.869402833,
+    "duration_s": 3.2993325079996794,
+    "effective_hz": 50.01011556123401,
+    "max_interval_ms": 21.244430000479042,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 34,
+      "shoulder_lift": 73.05494505494505,
+      "elbow_flex": -68.57142857142857,
+      "wrist_flex": -4.0,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 3
+    },
+    "max_joint_change_deg": 7.01098900623364,
+    "command_increment_p99_deg": 0.07913937100445778,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.9652506039701017,
+      "shoulder_lift": 0.1758241758241752,
+      "elbow_flex": 0.6153846153846132,
+      "wrist_flex": 0.0879120879120876,
+      "wrist_roll": 0.1758241758241758
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5729653938598023,
+      "shoulder_lift": 0.17582417582417517,
+      "elbow_flex": 0.6153846153846135,
+      "wrist_flex": 0.08791208791208759,
+      "wrist_roll": 0.15499561135933046
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 33.494505494505496,
+      "shoulder_lift": 73.23076923076923,
+      "elbow_flex": -67.95604395604396,
+      "wrist_flex": -4.087912087912088,
+      "wrist_roll": -0.21978021978021978,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-211455-680394",
+    "commands": 164,
+    "positions": 82,
+    "errors": [],
+    "start_s": 5747.257642379,
+    "end_s": 5750.51680674,
+    "duration_s": 3.2591643610003302,
+    "effective_hz": 50.01281983519563,
+    "max_interval_ms": 21.124095000232046,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 33.934065934065934,
+      "shoulder_lift": 80,
+      "elbow_flex": -68.57142857142857,
+      "wrist_flex": -4.0,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 6.945054942175005,
+    "command_increment_p99_deg": 0.08002296196817156,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.439560439560438,
+      "shoulder_lift": 0.4720884312490483,
+      "elbow_flex": 0.6153846153846132,
+      "wrist_flex": 0.0879120879120876,
+      "wrist_roll": 0.1758241758241758
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3620805809902281,
+      "shoulder_lift": 0.21451223535857095,
+      "elbow_flex": 0.6153846153846135,
+      "wrist_flex": 0.08791208791208759,
+      "wrist_roll": 0.13452168011885818
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 33.67032967032967,
+      "shoulder_lift": 79.91208791208791,
+      "elbow_flex": -67.95604395604396,
+      "wrist_flex": -4.087912087912088,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-211541-482629",
+    "commands": 151,
+    "positions": 76,
+    "errors": [],
+    "start_s": 5793.053819393,
+    "end_s": 5796.052498664,
+    "duration_s": 2.998679271000583,
+    "effective_hz": 50.022021844953365,
+    "max_interval_ms": 21.215056000073673,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 28,
+      "shoulder_lift": 80.0,
+      "elbow_flex": -68.57142857142857,
+      "wrist_flex": -10,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 5.999999973013267,
+    "command_increment_p99_deg": 0.07475898130340723,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.8811419711795949,
+      "shoulder_lift": 0.0879120879120876,
+      "elbow_flex": 0.6153846153846132,
+      "wrist_flex": 1.1189220585684598,
+      "wrist_roll": 0.1758241758241758
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5566194680973673,
+      "shoulder_lift": 0.08791208791208757,
+      "elbow_flex": 0.6153846153846135,
+      "wrist_flex": 0.7618632472048772,
+      "wrist_roll": 0.06535313772967279
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 28.571428571428573,
+      "shoulder_lift": 79.91208791208791,
+      "elbow_flex": -67.95604395604396,
+      "wrist_flex": -9.45054945054945,
+      "wrist_roll": 0.04395604395604396,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-211629-691378",
+    "commands": 151,
+    "positions": 76,
+    "errors": [],
+    "start_s": 5841.254480079,
+    "end_s": 5844.253925323,
+    "duration_s": 2.9994452439996167,
+    "effective_hz": 50.009247643401615,
+    "max_interval_ms": 21.4193140000134,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 34,
+      "shoulder_lift": 80.0,
+      "elbow_flex": -74,
+      "wrist_flex": -10.065934065934066,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 6.043956041291938,
+    "command_increment_p99_deg": 0.07502038529004182,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.8383363298527797,
+      "shoulder_lift": 0.0879120879120876,
+      "elbow_flex": 2.9930210339509387,
+      "wrist_flex": 0.615384615384615,
+      "wrist_roll": 0.08791208791208792
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5837318232640051,
+      "shoulder_lift": 0.08791208791208757,
+      "elbow_flex": 2.1997675397309235,
+      "wrist_flex": 0.6153846153846146,
+      "wrist_roll": 0.08004092026376486
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.08791208791208792
+    },
+    "final_position": {
+      "shoulder_pan": 33.40659340659341,
+      "shoulder_lift": 79.91208791208791,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -9.45054945054945,
+      "wrist_roll": 0.04395604395604396,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-211712-499262",
+    "commands": 151,
+    "positions": 76,
+    "errors": [],
+    "start_s": 5884.07261727,
+    "end_s": 5887.072291754,
+    "duration_s": 2.9996744840000247,
+    "effective_hz": 50.0054258554005,
+    "max_interval_ms": 20.86584100015898,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 33.934065934065934,
+      "shoulder_lift": 86,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -10.065934065934066,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 5.999999994268094,
+    "command_increment_p99_deg": 0.07449413375910552,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725256,
+      "shoulder_lift": 0.3977952964861373,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 0.615384615384615,
+      "wrist_roll": 0.08791208791208792
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725254,
+      "shoulder_lift": 0.19411359946342646,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 0.6153846153846146,
+      "wrist_roll": 0.08791208791208782
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0879120879120879
+    },
+    "final_position": {
+      "shoulder_pan": 33.40659340659341,
+      "shoulder_lift": 86.15384615384616,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -9.45054945054945,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-211759-095949",
+    "commands": 187,
+    "positions": 94,
+    "errors": [],
+    "start_s": 5930.652380928,
+    "end_s": 5934.371583425,
+    "duration_s": 3.7192024969999693,
+    "effective_hz": 50.01072142483064,
+    "max_interval_ms": 20.851217999734217,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 33.934065934065934,
+      "shoulder_lift": 85.97802197802197,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -18,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 7.934065930984287,
+    "command_increment_p99_deg": 0.07927237584377006,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725256,
+      "shoulder_lift": 0.1758241758241894,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 1.0926962428147302,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725254,
+      "shoulder_lift": 0.1758241758241894,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 0.8636464502356079,
+      "wrist_roll": 0.17582417582417564
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0879120879120876,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 33.40659340659341,
+      "shoulder_lift": 86.15384615384616,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -17.274725274725274,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-211841-316041",
+    "commands": 111,
+    "positions": 56,
+    "errors": [],
+    "start_s": 5972.873607654,
+    "end_s": 5975.07278946,
+    "duration_s": 2.1991818060005244,
+    "effective_hz": 50.01860223646002,
+    "max_interval_ms": 21.13738000025478,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 33.934065934065934,
+      "shoulder_lift": 85.97802197802197,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -8,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 10.065934058273584,
+    "command_increment_p99_deg": 0.3421816558858183,
+    "nonzero_command_increments_below_encoder_tick_pct": 29.09090909090909,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725256,
+      "shoulder_lift": 0.1758241758241894,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 5.265170357795876,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725254,
+      "shoulder_lift": 0.1758241758241894,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 3.4731909934958978,
+      "wrist_roll": 0.14766688874480177
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 3.5164835164835146,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 33.40659340659341,
+      "shoulder_lift": 86.15384615384616,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -17.36263736263736,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-211914-225020",
+    "commands": 151,
+    "positions": 76,
+    "errors": [],
+    "start_s": 6005.796983797,
+    "end_s": 6008.796404568,
+    "duration_s": 2.999420770999677,
+    "effective_hz": 50.009655680955525,
+    "max_interval_ms": 20.574529000441544,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 33.934065934065934,
+      "shoulder_lift": 89,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -18.065934065934066,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 3.0219780205359683,
+    "command_increment_p99_deg": 0.037567223056469035,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725256,
+      "shoulder_lift": 0.3228992465080438,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 0.7032967032967044,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725254,
+      "shoulder_lift": 0.15252806702138835,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 0.7032967032967042,
+      "wrist_roll": 0.17582417582417564
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 33.40659340659341,
+      "shoulder_lift": 89.31868131868131,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -17.36263736263736,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-211942-587708",
+    "commands": 151,
+    "positions": 76,
+    "errors": [],
+    "start_s": 6034.133856755,
+    "end_s": 6037.133630513,
+    "duration_s": 2.9997737579997192,
+    "effective_hz": 50.003770984389696,
+    "max_interval_ms": 21.238436000203365,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 33.934065934065934,
+      "shoulder_lift": 88.96703296703296,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -5,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 13.065934062817366,
+    "command_increment_p99_deg": 0.3238386588342033,
+    "nonzero_command_increments_below_encoder_tick_pct": 29.333333333333332,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725256,
+      "shoulder_lift": 0.3516483516483504,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 6.227470000977448,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725254,
+      "shoulder_lift": 0.3516483516483503,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 4.084555001157543,
+      "wrist_roll": 0.15752036581190698
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 4.131868131868131,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 33.40659340659341,
+      "shoulder_lift": 89.31868131868131,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -17.36263736263736,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-212044-149658",
+    "commands": 151,
+    "positions": 76,
+    "errors": [],
+    "start_s": 6095.715834348,
+    "end_s": 6098.71532366,
+    "duration_s": 2.9994893120001507,
+    "effective_hz": 50.00851291581214,
+    "max_interval_ms": 21.127429000443954,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 33.934065934065934,
+      "shoulder_lift": 88.96703296703296,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -5,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 13.065934051777004,
+    "command_increment_p99_deg": 0.3245333092796909,
+    "nonzero_command_increments_below_encoder_tick_pct": 30.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725256,
+      "shoulder_lift": 0.3516483516483504,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 6.17458702676573,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725254,
+      "shoulder_lift": 0.3516483516483503,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 4.061551699378119,
+      "wrist_roll": 0.15752036581190698
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 4.043956043956042,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 33.40659340659341,
+      "shoulder_lift": 89.31868131868131,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -17.36263736263736,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-212113-099585",
+    "commands": 151,
+    "positions": 76,
+    "errors": [],
+    "start_s": 6124.64715341,
+    "end_s": 6127.646305587,
+    "duration_s": 2.9991521769998144,
+    "effective_hz": 50.014134377819964,
+    "max_interval_ms": 21.063156999844068,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 33.934065934065934,
+      "shoulder_lift": 88.96703296703296,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -5,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 13.065934059731106,
+    "command_increment_p99_deg": 0.32386992215607635,
+    "nonzero_command_increments_below_encoder_tick_pct": 30.666666666666664,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725256,
+      "shoulder_lift": 0.3516483516483504,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 6.171019856120045,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5274725274725254,
+      "shoulder_lift": 0.3516483516483503,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 4.055036344282344,
+      "wrist_roll": 0.15654900794185925
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 4.043956043956042,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 33.40659340659341,
+      "shoulder_lift": 89.31868131868131,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -17.36263736263736,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-212154-745462",
+    "commands": 375,
+    "positions": 188,
+    "errors": [],
+    "start_s": 6166.318013935,
+    "end_s": 6173.797255719,
+    "duration_s": 7.479241783999896,
+    "effective_hz": 50.005068802573845,
+    "max_interval_ms": 21.420799999759765,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 18,
+      "shoulder_lift": 94,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -24,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 15.934065932833477,
+    "command_increment_p99_deg": 0.07955907034618623,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.9941069585464959,
+      "shoulder_lift": 0.35164835125905824,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 0.9821241941240295,
+      "wrist_roll": 0.17582417582417584
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.6134283640958451,
+      "shoulder_lift": 0.1767095816886453,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 0.770478630768033,
+      "wrist_roll": 0.17406177741640305
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0879120879120876,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 18.285714285714285,
+      "shoulder_lift": 94.24175824175825,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -23.428571428571427,
+      "wrist_roll": 0.13186813186813187,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-212244-646318",
+    "commands": 471,
+    "positions": 236,
+    "errors": [],
+    "start_s": 6216.204429745,
+    "end_s": 6225.604137878,
+    "duration_s": 9.399708132999876,
+    "effective_hz": 50.001552532248844,
+    "max_interval_ms": 21.346178999920085,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 17.934065934065934,
+      "shoulder_lift": 102,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -28,
+      "wrist_roll": 20,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 20.043956043738277,
+    "command_increment_p99_deg": 0.07949625700676007,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3516483516483504,
+      "shoulder_lift": 0.3418189223983319,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 0.9056262060904388,
+      "wrist_roll": 0.7780450195942556
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3516483516483497,
+      "shoulder_lift": 0.17283467227998459,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 0.7272218148648742,
+      "wrist_roll": 0.5163920313146994
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.35164835164835395
+    },
+    "final_position": {
+      "shoulder_pan": 18.285714285714285,
+      "shoulder_lift": 102.32967032967034,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -27.208791208791208,
+      "wrist_roll": 19.736263736263737,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-212334-918988",
+    "commands": 470,
+    "positions": 235,
+    "errors": [],
+    "start_s": 6266.472633738,
+    "end_s": 6275.852432401,
+    "duration_s": 9.379798663000656,
+    "effective_hz": 50.001073247979924,
+    "max_interval_ms": 21.133588000338932,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 17.934065934065934,
+      "shoulder_lift": 101.97802197802197,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -28.0,
+      "wrist_roll": 40,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 19.999999999737394,
+    "command_increment_p99_deg": 0.07959061342959942,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3516483516483504,
+      "shoulder_lift": 0.3516483516483646,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 0.791208791208792,
+      "wrist_roll": 0.7988100988352329
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3516483516483497,
+      "shoulder_lift": 0.35164835164836394,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 0.7912087912087936,
+      "wrist_roll": 0.5535350698822793
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 18.285714285714285,
+      "shoulder_lift": 102.32967032967034,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -27.208791208791208,
+      "wrist_roll": 39.604395604395606,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-212426-853700",
+    "commands": 354,
+    "positions": 177,
+    "errors": [],
+    "start_s": 6318.415839862,
+    "end_s": 6325.475403388,
+    "duration_s": 7.0595635259996925,
+    "effective_hz": 50.003091366758724,
+    "max_interval_ms": 21.675790000699635,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 17.934065934065934,
+      "shoulder_lift": 100,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -22,
+      "wrist_roll": 55,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 15.043956043143325,
+    "command_increment_p99_deg": 0.07952169611170347,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3516483516483504,
+      "shoulder_lift": 2.3296702464969457,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 0.791208790884653,
+      "wrist_roll": 0.834671121429956
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.35164835164835007,
+      "shoulder_lift": 1.532856203541216,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 0.47793200477688397,
+      "wrist_roll": 0.5471033085562356
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 18.285714285714285,
+      "shoulder_lift": 102.32967032967034,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -22.373626373626372,
+      "wrist_roll": 54.637362637362635,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-212523-582941",
+    "commands": 236,
+    "positions": 118,
+    "errors": [],
+    "start_s": 6375.168214839,
+    "end_s": 6379.867415337,
+    "duration_s": 4.699200498000209,
+    "effective_hz": 50.00850678748577,
+    "max_interval_ms": 21.380314999987604,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 24,
+      "shoulder_lift": 99.95604395604396,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -28,
+      "wrist_roll": 65,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 10.010989008599559,
+    "command_increment_p99_deg": 0.07980208290998661,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.8694497448480121,
+      "shoulder_lift": 2.3736263736263794,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 1.0590883184561193,
+      "wrist_roll": 0.754384720848158
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.564448305607246,
+      "shoulder_lift": 2.373626373626379,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 0.6918647416761448,
+      "wrist_roll": 0.55411415192583
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 23.560439560439562,
+      "shoulder_lift": 102.32967032967034,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -27.208791208791208,
+      "wrist_roll": 64.48351648351648,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-212610-354042",
+    "commands": 151,
+    "positions": 76,
+    "errors": [],
+    "start_s": 6421.949283424,
+    "end_s": 6424.949115101,
+    "duration_s": 2.9998316769997473,
+    "effective_hz": 50.00280554074989,
+    "max_interval_ms": 21.672634999958973,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 24.0,
+      "shoulder_lift": 105,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -28.0,
+      "wrist_roll": 64.92307692307692,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 5.04395604176834,
+    "command_increment_p99_deg": 0.06256213701430312,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3516483516483504,
+      "shoulder_lift": 2.373626371438675,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 0.791208791208792,
+      "wrist_roll": 0.439560439560438
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.34757619041431204,
+      "shoulder_lift": 1.2569463289595746,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 0.7499695449700622,
+      "wrist_roll": 0.43956043956043783
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 23.736263736263737,
+      "shoulder_lift": 105.14285714285714,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -27.384615384615383,
+      "wrist_roll": 64.48351648351648,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-212659-095238",
+    "commands": 167,
+    "positions": 84,
+    "errors": [],
+    "start_s": 6470.693815709,
+    "end_s": 6474.013469896,
+    "duration_s": 3.3196541870001965,
+    "effective_hz": 50.00520856963291,
+    "max_interval_ms": 20.769898000253306,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 24.0,
+      "shoulder_lift": 104.96703296703296,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -28.0,
+      "wrist_roll": 72,
+      "gripper": 2.9729729729729732
+    },
+    "max_joint_change_deg": 7.076923074620737,
+    "command_increment_p99_deg": 0.07945066270751625,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.2637362637362628,
+      "shoulder_lift": 0.1758241758241752,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 0.6153846153846168,
+      "wrist_roll": 0.7915184080912496
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.2637362637362627,
+      "shoulder_lift": 0.17582417582417517,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 0.6153846153846169,
+      "wrist_roll": 0.5692226695301319
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 23.736263736263737,
+      "shoulder_lift": 105.14285714285714,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -27.384615384615383,
+      "wrist_roll": 71.42857142857143,
+      "gripper": 4.45945945945946
+    }
+  },
+  {
+    "run": "robot-20260917-212752-019677",
+    "commands": 213,
+    "positions": 107,
+    "errors": [],
+    "start_s": 6523.595977536,
+    "end_s": 6527.835722054,
+    "duration_s": 4.239744518000407,
+    "effective_hz": 50.003012940974486,
+    "max_interval_ms": 20.978456999728223,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 24.0,
+      "shoulder_lift": 104.96703296703296,
+      "elbow_flex": -74.02197802197803,
+      "wrist_flex": -28.0,
+      "wrist_roll": 71.95604395604396,
+      "gripper": 12
+    },
+    "max_joint_change_deg": 0.0,
+    "command_increment_p99_deg": 0.0,
+    "nonzero_command_increments_below_encoder_tick_pct": null,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.2637362637362628,
+      "shoulder_lift": 0.1758241758241752,
+      "elbow_flex": 2.461538461538467,
+      "wrist_flex": 0.6153846153846168,
+      "wrist_roll": 0.5274725274725256
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.2637362637362627,
+      "shoulder_lift": 0.17582417582417523,
+      "elbow_flex": 2.4615384615384674,
+      "wrist_flex": 0.6153846153846169,
+      "wrist_roll": 0.5274725274725254
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 23.736263736263737,
+      "shoulder_lift": 105.14285714285714,
+      "elbow_flex": -71.56043956043956,
+      "wrist_flex": -27.384615384615383,
+      "wrist_roll": 71.42857142857143,
+      "gripper": 11.756756756756758
+    }
+  },
+  {
+    "run": "robot-20260917-213027-670039",
+    "commands": 0,
+    "positions": 0,
+    "errors": []
+  },
+  {
+    "run": "robot-20260917-213110-496686",
+    "commands": 563,
+    "positions": 282,
+    "errors": [],
+    "start_s": 6722.086284823,
+    "end_s": 6733.325958759,
+    "duration_s": 11.239673936000145,
+    "effective_hz": 50.00145050471086,
+    "max_interval_ms": 21.529990999624715,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 10,
+      "shoulder_lift": 85,
+      "elbow_flex": -55,
+      "wrist_flex": -28.0,
+      "wrist_roll": 48,
+      "gripper": 11.95945945945946
+    },
+    "max_joint_change_deg": 23.956043955863862,
+    "command_increment_p99_deg": 0.07953917709365278,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.952262279279811,
+      "shoulder_lift": 2.858327723918947,
+      "elbow_flex": 2.461538461395463,
+      "wrist_flex": 0.6153846153846168,
+      "wrist_roll": 0.7624145047194801
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5282904814187294,
+      "shoulder_lift": 2.127362032037344,
+      "elbow_flex": 1.012133847895771,
+      "wrist_flex": 0.5541533601385686,
+      "wrist_roll": 0.43222087879278104
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0879120879120876
+    },
+    "final_position": {
+      "shoulder_pan": 10.373626373626374,
+      "shoulder_lift": 87.03296703296704,
+      "elbow_flex": -54.76923076923077,
+      "wrist_flex": -27.47252747252747,
+      "wrist_roll": 48.21978021978022,
+      "gripper": 11.756756756756758
+    }
+  },
+  {
+    "run": "robot-20260917-213234-343124",
+    "commands": 500,
+    "positions": 250,
+    "errors": [
+      "RuntimeError(\"Temperature threshold exceeded: {'shoulder_pan': 38, 'shoulder_lift': 39, 'elbow_flex': 45, 'wrist_flex': 40, 'wrist_roll': 39, 'gripper': 51}\")"
+    ],
+    "start_s": 6805.911277399,
+    "end_s": 6815.889923596,
+    "duration_s": 9.978646196999762,
+    "effective_hz": 50.00678350035421,
+    "max_interval_ms": 21.378147999712382,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 9.934065934065934,
+      "shoulder_lift": 70,
+      "elbow_flex": -35,
+      "wrist_flex": -28.0,
+      "wrist_roll": 24,
+      "gripper": 11.95945945945946
+    },
+    "max_joint_change_deg": 23.67892909751152,
+    "command_increment_p99_deg": 0.0795658222786028,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.4395604395604398,
+      "shoulder_lift": 2.4630997133709513,
+      "elbow_flex": 0.2971366893066758,
+      "wrist_flex": 0.6153846153846168,
+      "wrist_roll": 0.6600082249073793
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.43956043956044083,
+      "shoulder_lift": 1.8974621755018357,
+      "elbow_flex": 0.12314791452260643,
+      "wrist_flex": 0.5278533423866079,
+      "wrist_roll": 0.43303781931803675
+    }
+  },
+  {
+    "run": "robot-20260917-213314-220422",
+    "commands": 0,
+    "positions": 0,
+    "errors": []
+  },
+  {
+    "run": "robot-20260917-213402-115039",
+    "commands": 551,
+    "positions": 276,
+    "errors": [],
+    "start_s": 6893.704656441,
+    "end_s": 6904.702989837,
+    "duration_s": 10.998333395999907,
+    "effective_hz": 50.00757662065735,
+    "max_interval_ms": 21.40005699948233,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 14,
+      "shoulder_lift": 62,
+      "elbow_flex": -20,
+      "wrist_flex": -27.47252747252747,
+      "wrist_roll": 48,
+      "gripper": 11.756756756756758
+    },
+    "max_joint_change_deg": 23.428571427337268,
+    "command_increment_p99_deg": 0.07935577217266082,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.8910300001100833,
+      "shoulder_lift": 1.501861587465541,
+      "elbow_flex": 0.5124735496643709,
+      "wrist_flex": 0.5274725274725292,
+      "wrist_roll": 0.8184327658278931
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5638067659498194,
+      "shoulder_lift": 0.8219342343681969,
+      "elbow_flex": 0.22242094423233164,
+      "wrist_flex": 0.2876555755444569,
+      "wrist_roll": 0.5352750119422821
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 13.362637362637363,
+      "shoulder_lift": 62.15384615384615,
+      "elbow_flex": -20.307692307692307,
+      "wrist_flex": -28.0,
+      "wrist_roll": 47.604395604395606,
+      "gripper": 11.756756756756758
+    }
+  },
+  {
+    "run": "robot-20260917-213522-196041",
+    "commands": 563,
+    "positions": 282,
+    "errors": [],
+    "start_s": 6973.746573803,
+    "end_s": 6984.986160128,
+    "duration_s": 11.239586325000346,
+    "effective_hz": 50.00184025900817,
+    "max_interval_ms": 20.994100000280014,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 13.978021978021978,
+      "shoulder_lift": 54,
+      "elbow_flex": -20.043956043956044,
+      "wrist_flex": -27.47252747252747,
+      "wrist_roll": 24,
+      "gripper": 11.756756756756758
+    },
+    "max_joint_change_deg": 23.956043955017833,
+    "command_increment_p99_deg": 0.07953207833089393,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.615384615384615,
+      "shoulder_lift": 1.189216095935798,
+      "elbow_flex": 0.2637362637362628,
+      "wrist_flex": 0.5274725274725292,
+      "wrist_roll": 0.6591426978001209
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5061548380379961,
+      "shoulder_lift": 0.7575960263828906,
+      "elbow_flex": 0.1787612223768628,
+      "wrist_flex": 0.2992255044091457,
+      "wrist_roll": 0.40791527812926615
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 13.538461538461538,
+      "shoulder_lift": 54.76923076923077,
+      "elbow_flex": -19.86813186813187,
+      "wrist_flex": -27.47252747252747,
+      "wrist_roll": 24.395604395604394,
+      "gripper": 11.756756756756758
+    }
+  },
+  {
+    "run": "robot-20260917-213617-546492",
+    "commands": 563,
+    "positions": 282,
+    "errors": [],
+    "start_s": 7029.141908247,
+    "end_s": 7040.3818166,
+    "duration_s": 11.239908352999919,
+    "effective_hz": 50.00040768570882,
+    "max_interval_ms": 21.102009999594884,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 13.978021978021978,
+      "shoulder_lift": 53.97802197802198,
+      "elbow_flex": -20.043956043956044,
+      "wrist_flex": -27.47252747252747,
+      "wrist_roll": 0,
+      "gripper": 11.756756756756758
+    },
+    "max_joint_change_deg": 23.956043955189855,
+    "command_increment_p99_deg": 0.07953452021666527,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.4395604395604398,
+      "shoulder_lift": 0.7912087912087884,
+      "elbow_flex": 0.1758241758241752,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.7227966099808123
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.43956043956044116,
+      "shoulder_lift": 0.791208791208789,
+      "elbow_flex": 0.17582417582417495,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.4355742679718715
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 13.538461538461538,
+      "shoulder_lift": 54.76923076923077,
+      "elbow_flex": -19.86813186813187,
+      "wrist_flex": -27.47252747252747,
+      "wrist_roll": 0.3956043956043956,
+      "gripper": 11.756756756756758
+    }
+  },
+  {
+    "run": "robot-20260917-213658-674886",
+    "commands": 563,
+    "positions": 282,
+    "errors": [],
+    "start_s": 7070.244544907,
+    "end_s": 7081.484042578,
+    "duration_s": 11.239497671000208,
+    "effective_hz": 50.00223465947722,
+    "max_interval_ms": 20.901548000438197,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 13.978021978021978,
+      "shoulder_lift": 53.97802197802198,
+      "elbow_flex": -20.043956043956044,
+      "wrist_flex": -27.47252747252747,
+      "wrist_roll": -24,
+      "gripper": 11.756756756756758
+    },
+    "max_joint_change_deg": 23.95604395588936,
+    "command_increment_p99_deg": 0.0795484540516851,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.4395604395604398,
+      "shoulder_lift": 0.7912087912087884,
+      "elbow_flex": 0.1758241758241752,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.6608015013902175
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.43956043956044116,
+      "shoulder_lift": 0.791208791208789,
+      "elbow_flex": 0.17582417582417495,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.4373379221897182
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 13.538461538461538,
+      "shoulder_lift": 54.76923076923077,
+      "elbow_flex": -19.86813186813187,
+      "wrist_flex": -27.47252747252747,
+      "wrist_roll": -23.604395604395606,
+      "gripper": 11.756756756756758
+    }
+  },
+  {
+    "run": "robot-20260917-213746-579196",
+    "commands": 563,
+    "positions": 282,
+    "errors": [],
+    "start_s": 7118.139644091,
+    "end_s": 7129.37981685,
+    "duration_s": 11.240172758999506,
+    "effective_hz": 49.999231510924204,
+    "max_interval_ms": 21.226096000646066,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 23,
+      "shoulder_lift": 53.97802197802198,
+      "elbow_flex": -20.043956043956044,
+      "wrist_flex": -27.47252747252747,
+      "wrist_roll": -48,
+      "gripper": 11.756756756756758
+    },
+    "max_joint_change_deg": 23.956043955863578,
+    "command_increment_p99_deg": 0.07952157332132387,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.8110475963841743,
+      "shoulder_lift": 0.7912087912087884,
+      "elbow_flex": 0.1758241758241752,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.6998994376023617
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.55197949628489,
+      "shoulder_lift": 0.791208791208789,
+      "elbow_flex": 0.17582417582417495,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.44783028074021175
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 22.593406593406595,
+      "shoulder_lift": 54.76923076923077,
+      "elbow_flex": -19.86813186813187,
+      "wrist_flex": -27.47252747252747,
+      "wrist_roll": -47.51648351648352,
+      "gripper": 11.756756756756758
+    }
+  },
+  {
+    "run": "robot-20260917-213918-256646",
+    "commands": 151,
+    "positions": 76,
+    "errors": [],
+    "start_s": 7209.799687596,
+    "end_s": 7212.79953322,
+    "duration_s": 2.999845624000045,
+    "effective_hz": 50.00257306573912,
+    "max_interval_ms": 20.945625000422297,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 22.945054945054945,
+      "shoulder_lift": 51,
+      "elbow_flex": -15,
+      "wrist_flex": -27.47252747252747,
+      "wrist_roll": -48.043956043956044,
+      "gripper": 11.756756756756758
+    },
+    "max_joint_change_deg": 5.0439560407908175,
+    "command_increment_p99_deg": 0.06256467862202715,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3516483516483504,
+      "shoulder_lift": 1.0224249014625926,
+      "elbow_flex": 0.44446950097460736,
+      "wrist_flex": 0.26373626373626635,
+      "wrist_roll": 0.5274725274725256
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3286276164743088,
+      "shoulder_lift": 0.6540824771998297,
+      "elbow_flex": 0.21917681050615553,
+      "wrist_flex": 0.12184794986478978,
+      "wrist_roll": 0.5274725274725254
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 22.681318681318682,
+      "shoulder_lift": 51.07692307692308,
+      "elbow_flex": -15.296703296703297,
+      "wrist_flex": -27.736263736263737,
+      "wrist_roll": -47.51648351648352,
+      "gripper": 11.756756756756758
+    }
+  },
+  {
+    "run": "robot-20260917-214127-686614",
+    "commands": 0,
+    "positions": 0,
+    "errors": []
+  },
+  {
+    "run": "robot-20260917-214141-268591",
+    "commands": 295,
+    "positions": 148,
+    "errors": [],
+    "start_s": 7352.852875985,
+    "end_s": 7358.731995529,
+    "duration_s": 5.879119544000787,
+    "effective_hz": 50.007487991974166,
+    "max_interval_ms": 21.02944799935358,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 22.945054945054945,
+      "shoulder_lift": 40,
+      "elbow_flex": -15.032967032967033,
+      "wrist_flex": -40,
+      "wrist_roll": -48.043956043956044,
+      "gripper": 11.756756756756758
+    },
+    "max_joint_change_deg": 12.527472525165631,
+    "command_increment_p99_deg": 0.07950817113015567,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3516483516483504,
+      "shoulder_lift": 0.9622182771309227,
+      "elbow_flex": 0.2637362637362646,
+      "wrist_flex": 1.304123674838575,
+      "wrist_roll": 0.5274725274725256
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.29326790487204984,
+      "shoulder_lift": 0.6704923393171227,
+      "elbow_flex": 0.12886390773136175,
+      "wrist_flex": 0.8448695781840293,
+      "wrist_roll": 0.5274725274725262
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.1758241758241823,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 22.681318681318682,
+      "shoulder_lift": 40.7032967032967,
+      "elbow_flex": -14.945054945054945,
+      "wrist_flex": -39.16483516483517,
+      "wrist_roll": -47.51648351648352,
+      "gripper": 12.027027027027028
+    }
+  },
+  {
+    "run": "robot-20260917-214221-990236",
+    "commands": 471,
+    "positions": 236,
+    "errors": [],
+    "start_s": 7393.596764057,
+    "end_s": 7402.99717781,
+    "duration_s": 9.400413753000066,
+    "effective_hz": 49.99779928303723,
+    "max_interval_ms": 21.15287200012972,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 22.945054945054945,
+      "shoulder_lift": 40.0,
+      "elbow_flex": 5,
+      "wrist_flex": -55,
+      "wrist_roll": -48.043956043956044,
+      "gripper": 11.756756756756758
+    },
+    "max_joint_change_deg": 20.03296703252059,
+    "command_increment_p99_deg": 0.07953531146995578,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.2637362637362628,
+      "shoulder_lift": 0.7032967032967008,
+      "elbow_flex": 3.857142857142857,
+      "wrist_flex": 1.1087754531502725,
+      "wrist_roll": 0.5274725274725256
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.23096870287041085,
+      "shoulder_lift": 0.575226998934439,
+      "elbow_flex": 1.855190859100531,
+      "wrist_flex": 0.9338559022479043,
+      "wrist_roll": 0.4638828607534154
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.08791208791208804,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 22.76923076923077,
+      "shoulder_lift": 40.43956043956044,
+      "elbow_flex": 1.2307692307692308,
+      "wrist_flex": -54.10989010989011,
+      "wrist_roll": -47.604395604395606,
+      "gripper": 11.68918918918919
+    }
+  },
+  {
+    "run": "robot-20260917-214312-147519",
+    "commands": 470,
+    "positions": 235,
+    "errors": [],
+    "start_s": 7443.697858467,
+    "end_s": 7453.077234834,
+    "duration_s": 9.379376367000077,
+    "effective_hz": 50.003324490752476,
+    "max_interval_ms": 21.033127999544377,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 22.945054945054945,
+      "shoulder_lift": 60,
+      "elbow_flex": 4.923076923076923,
+      "wrist_flex": -75,
+      "wrist_roll": -48.043956043956044,
+      "gripper": 11.756756756756758
+    },
+    "max_joint_change_deg": 19.999999999799556,
+    "command_increment_p99_deg": 0.07971757978377753,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.1758241758241752,
+      "shoulder_lift": 1.05256313267612,
+      "elbow_flex": 3.7802197802197806,
+      "wrist_flex": 1.2439008202770765,
+      "wrist_roll": 0.439560439560438
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.17582417582417484,
+      "shoulder_lift": 0.5909562649193755,
+      "elbow_flex": 3.732966953814815,
+      "wrist_flex": 0.9555732290583533,
+      "wrist_roll": 0.40339406938149375
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 22.76923076923077,
+      "shoulder_lift": 59.51648351648352,
+      "elbow_flex": 1.1428571428571428,
+      "wrist_flex": -74.32967032967034,
+      "wrist_roll": -47.69230769230769,
+      "gripper": 11.68918918918919
+    }
+  },
+  {
+    "run": "robot-20260917-214359-267681",
+    "commands": 100,
+    "positions": 50,
+    "errors": [
+      "RuntimeError(\"Temperature threshold exceeded: {'shoulder_pan': 38, 'shoulder_lift': 39, 'elbow_flex': 51, 'wrist_flex': 39, 'wrist_roll': 39, 'gripper': 41}\")"
+    ],
+    "start_s": 7490.846116588,
+    "end_s": 7492.824631899,
+    "duration_s": 1.9785153110005922,
+    "effective_hz": 50.03752028076692,
+    "max_interval_ms": 20.85780200013687,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 22.945054945054945,
+      "shoulder_lift": 59.956043956043956,
+      "elbow_flex": -20,
+      "wrist_flex": -50,
+      "wrist_roll": -48.043956043956044,
+      "gripper": 11.756756756756758
+    },
+    "max_joint_change_deg": 0.9194008230771686,
+    "command_increment_p99_deg": 0.024065833381175638,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.1758241758241752,
+      "shoulder_lift": 0.439560439560438,
+      "elbow_flex": 3.780219778863479,
+      "wrist_flex": 0.7032967019344198,
+      "wrist_roll": 0.3516483516483504
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.1758241758241751,
+      "shoulder_lift": 0.43956043956043805,
+      "elbow_flex": 3.5501688201987256,
+      "wrist_flex": 0.5331084607243488,
+      "wrist_roll": 0.3516483516483502
+    }
+  },
+  {
+    "run": "robot-20260917-214415-256996",
+    "commands": 0,
+    "positions": 0,
+    "errors": []
+  },
+  {
+    "run": "robot-20260917-214441-099755",
+    "commands": 572,
+    "positions": 286,
+    "errors": [],
+    "start_s": 7532.685336824,
+    "end_s": 7544.104735841,
+    "duration_s": 11.419399016999705,
+    "effective_hz": 50.0026314125612,
+    "max_interval_ms": 21.344941999814182,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 22.76923076923077,
+      "shoulder_lift": 59.51648351648352,
+      "elbow_flex": -20,
+      "wrist_flex": -50,
+      "wrist_roll": -47.69230769230769,
+      "gripper": 11.68918918918919
+    },
+    "max_joint_change_deg": 24.32967032938194,
+    "command_increment_p99_deg": 0.07939015411841595,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.1758241758241752,
+      "shoulder_lift": 0.5274725274725256,
+      "elbow_flex": 3.0334412749550896,
+      "wrist_flex": 1.7513815390012226,
+      "wrist_roll": 0.1758241758241752
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.1373388129650511,
+      "shoulder_lift": 0.3741007110125317,
+      "elbow_flex": 1.8794438647062175,
+      "wrist_flex": 0.5928243267980433,
+      "wrist_roll": 0.1257313304499676
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 22.593406593406595,
+      "shoulder_lift": 60.043956043956044,
+      "elbow_flex": -17.582417582417584,
+      "wrist_flex": -50.32967032967033,
+      "wrist_roll": -47.604395604395606,
+      "gripper": 11.68918918918919
+    }
+  },
+  {
+    "run": "robot-20260917-214607-181393",
+    "commands": 553,
+    "positions": 277,
+    "errors": [],
+    "start_s": 7618.76839326,
+    "end_s": 7629.808295072,
+    "duration_s": 11.039901811999698,
+    "effective_hz": 50.00044469598541,
+    "max_interval_ms": 21.169913000449014,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 22.76923076923077,
+      "shoulder_lift": 36,
+      "elbow_flex": -20.043956043956044,
+      "wrist_flex": -50.065934065934066,
+      "wrist_roll": -47.69230769230769,
+      "gripper": 11.68918918918919
+    },
+    "max_joint_change_deg": 23.51648351619155,
+    "command_increment_p99_deg": 0.0793843896517402,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.1758241758241752,
+      "shoulder_lift": 1.2925599505283785,
+      "elbow_flex": 2.46153846153846,
+      "wrist_flex": 0.2637362637362628,
+      "wrist_roll": 0.0
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.1204509922444843,
+      "shoulder_lift": 0.9654761072078674,
+      "elbow_flex": 2.461538461538465,
+      "wrist_flex": 0.2637362637362631,
+      "wrist_roll": 0.0
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 22.681318681318682,
+      "shoulder_lift": 36.92307692307692,
+      "elbow_flex": -17.582417582417584,
+      "wrist_flex": -50.32967032967033,
+      "wrist_roll": -47.69230769230769,
+      "gripper": 11.68918918918919
+    }
+  },
+  {
+    "run": "robot-20260917-214647-524921",
+    "commands": 566,
+    "positions": 283,
+    "errors": [],
+    "start_s": 7659.091328142,
+    "end_s": 7670.390667625,
+    "duration_s": 11.29933948300004,
+    "effective_hz": 50.0029228124394,
+    "max_interval_ms": 21.442860999741242,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 12,
+      "elbow_flex": -10,
+      "wrist_flex": -26,
+      "wrist_roll": -24,
+      "gripper": 11.68918918918919
+    },
+    "max_joint_change_deg": 24.06593406568787,
+    "command_increment_p99_deg": 0.07975494341930812,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.9213293280504278,
+      "shoulder_lift": 0.9926461715497226,
+      "elbow_flex": 2.4615384614357083,
+      "wrist_flex": 0.9178129497500258,
+      "wrist_roll": 0.8319493804626248
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.5130996958994728,
+      "shoulder_lift": 0.670272759983531,
+      "elbow_flex": 1.1708628850626155,
+      "wrist_flex": 0.3806423027138614,
+      "wrist_roll": 0.555989690556185
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 0.3516483516483517,
+      "shoulder_lift": 12.395604395604396,
+      "elbow_flex": -9.758241758241759,
+      "wrist_flex": -26.24175824175824,
+      "wrist_roll": -24.307692307692307,
+      "gripper": 11.68918918918919
+    }
+  },
+  {
+    "run": "robot-20260917-214737-321431",
+    "commands": 566,
+    "positions": 283,
+    "errors": [],
+    "start_s": 7708.908015415,
+    "end_s": 7720.20811554,
+    "duration_s": 11.300100125000426,
+    "effective_hz": 49.99955697295016,
+    "max_interval_ms": 21.133147000000463,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": -2,
+      "wrist_roll": 0,
+      "gripper": 11.68918918918919
+    },
+    "max_joint_change_deg": 24.06593406575917,
+    "command_increment_p99_deg": 0.07987171950370438,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3516483516483517,
+      "shoulder_lift": 0.8050762266941751,
+      "elbow_flex": 0.9670329670272703,
+      "wrist_flex": 0.6764747137027864,
+      "wrist_roll": 0.8185620178999606
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.35164835164835245,
+      "shoulder_lift": 0.4605376942222288,
+      "elbow_flex": 0.44433347422423614,
+      "wrist_flex": 0.38436844283565924,
+      "wrist_roll": 0.5566329216628377
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.08791208791208793,
+      "elbow_flex": 0.43956043956043955,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 0.3516483516483517,
+      "shoulder_lift": 0.5274725274725275,
+      "elbow_flex": -0.5274725274725275,
+      "wrist_flex": -2.32967032967033,
+      "wrist_roll": -0.3956043956043956,
+      "gripper": 11.68918918918919
+    }
+  },
+  {
+    "run": "robot-20260917-214830-720987",
+    "commands": 151,
+    "positions": 76,
+    "errors": [],
+    "start_s": 7762.293934276,
+    "end_s": 7765.29371995,
+    "duration_s": 2.9997856740001225,
+    "effective_hz": 50.00357235521415,
+    "max_interval_ms": 20.879624000372132,
+    "intervals_over_33ms": 0,
+    "target": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0,
+      "wrist_roll": -0.04395604395604396,
+      "gripper": 11.68918918918919
+    },
+    "max_joint_change_deg": 2.065934064849185,
+    "command_increment_p99_deg": 0.02570342976640194,
+    "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+    "max_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3516483516483517,
+      "shoulder_lift": 0.5274725274725275,
+      "elbow_flex": 0.5274725274725275,
+      "wrist_flex": 0.6593406593406593,
+      "wrist_roll": 0.3516483516483516
+    },
+    "rms_tracking_error_deg_by_joint": {
+      "shoulder_pan": 0.3516483516483513,
+      "shoulder_lift": 0.43103354693508567,
+      "elbow_flex": 0.5274725274725277,
+      "wrist_flex": 0.45669811688364337,
+      "wrist_roll": 0.3516483516483513
+    },
+    "settle_range_deg_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "final_position": {
+      "shoulder_pan": 0.3516483516483517,
+      "shoulder_lift": 0.08791208791208792,
+      "elbow_flex": -0.5274725274725275,
+      "wrist_flex": -0.6593406593406593,
+      "wrist_roll": -0.3956043956043956,
+      "gripper": 11.68918918918919
+    }
+  }
+]

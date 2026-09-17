@@ -1,0 +1,154 @@
+import argparse, json, time, threading
+from datetime import datetime
+from pathlib import Path
+import cv2
+from lerobot.motors import Motor, MotorNormMode, MotorCalibration
+from lerobot.motors.feetech import FeetechMotorsBus
+
+p=argparse.ArgumentParser();p.add_argument('--target',default='{}');p.add_argument('--hold-seconds',type=float,default=0);a=p.parse_args()
+assert 0<=a.hold_seconds<=30
+target_update=json.loads(a.target)
+run_id=datetime.now().strftime('%Y%m%d-%H%M%S-%f')
+c=json.loads(Path('/home/oopslink/.cache/huggingface/lerobot/calibration/robots/so_follower/oopslink_follower_arm.json').read_text())
+b=FeetechMotorsBus(port='/dev/ttyACM0',motors={n:Motor(v['id'],'sts3215',MotorNormMode.RANGE_0_100 if n=='gripper' else MotorNormMode.DEGREES) for n,v in c.items()},calibration={n:MotorCalibration(**v) for n,v in c.items()})
+bounds={'shoulder_pan':(-55,55),'shoulder_lift':(-5,120),'elbow_flex':(-75,30),'wrist_flex':(-110,35),'wrist_roll':(-80,80),'gripper':(1.5,35)}
+log_path=f'/tmp/robot-{run_id}-control.jsonl'
+control_log=open(log_path,'x',buffering=65536)
+def record(kind,**fields):
+ control_log.write(json.dumps({'kind':kind,'monotonic_ns':time.monotonic_ns(),'wall_time_ns':time.time_ns(),**fields})+'\n')
+video_stop=threading.Event();video_ready=threading.Event();video_errors=[];video_thread=None
+video_path=f'/tmp/robot-{run_id}-side.avi'
+frame_path=f'/tmp/robot-{run_id}-frames.jsonl'
+def capture_video():
+ cap=cv2.VideoCapture(2,cv2.CAP_V4L2);writer=None
+ try:
+  cap.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc(*'MJPG'));cap.set(3,1920);cap.set(4,1080);cap.set(cv2.CAP_PROP_FPS,30)
+  ok,frame=cap.read()
+  if not ok:raise RuntimeError('Video camera unavailable')
+  h,w=frame.shape[:2];writer=cv2.VideoWriter(video_path,cv2.VideoWriter_fourcc(*'MJPG'),30,(w,h))
+  if not writer.isOpened():raise RuntimeError('Video writer unavailable')
+  with open(frame_path,'x') as log:
+   index=0
+   while not video_stop.is_set():
+    stamp=time.monotonic_ns();writer.write(frame)
+    log.write(json.dumps({'frame':index,'monotonic_ns':stamp,'wall_time_ns':time.time_ns()})+'\n');index+=1
+    video_ready.set()
+    ok,frame=cap.read()
+    if not ok:raise RuntimeError('Video frame failed')
+ except BaseException as err:video_errors.append(repr(err));video_ready.set()
+ finally:
+  cap.release()
+  if writer:writer.release()
+b.connect(handshake=False)
+try:
+ if not b.is_calibrated:raise RuntimeError('Calibration mismatch')
+ initial=b.sync_read('Present_Position',num_retry=2)
+ print('INITIAL',json.dumps(initial),flush=True)
+ torque=b.sync_read('Torque_Enable',normalize=False,num_retry=2)
+ previous_goal=b.sync_read('Goal_Position',num_retry=2) if all(torque.values()) else initial.copy()
+ target={**previous_goal,**target_update}
+ if all(torque.values()):initial['gripper']=previous_goal['gripper']
+ for k,v in target.items():
+  if k not in bounds or not bounds[k][0]<=v<=bounds[k][1]:raise ValueError('Outside permitted range')
+  if abs(v-initial[k])>25.1:raise ValueError('Step greater than 25 degrees/percent')
+ record('start',measured=initial,previous_goal=previous_goal,target=target,torque=torque,units={'joints':'degrees','gripper':'0-100','load':'servo raw','temperature':'C'})
+ if all(torque.values()):initial=previous_goal.copy()
+ if target_update or a.hold_seconds:
+  # Validate both fresh camera feeds before enabling or commanding motion.
+  for i in (0,2):
+   cap=cv2.VideoCapture(i,cv2.CAP_V4L2)
+   ok,_=cap.read();cap.release()
+   if not ok:raise RuntimeError('Camera unavailable')
+  torque=b.sync_read('Torque_Enable',normalize=False,num_retry=2)
+  if not all(torque.values()):
+   if any(torque.values()):raise RuntimeError('Unexpected mixed torque state')
+   raw=b.sync_read('Present_Position',normalize=False,num_retry=2)
+   b.sync_write('Goal_Position',raw,normalize=False,num_retry=2)
+   for n in c:b.write('Goal_Velocity',n,80,normalize=False,num_retry=2)
+   if any(v!=80 for v in b.sync_read('Goal_Velocity',normalize=False,num_retry=2).values()):raise RuntimeError('Speed setting failed')
+   b.enable_torque(num_retry=2)
+  video_thread=threading.Thread(target=capture_video,daemon=True);video_thread.start()
+  if not video_ready.wait(5) or video_errors:raise RuntimeError('Video startup failed: '+str(video_errors))
+  duration=max(3.0,max(abs(target[k]-initial[k]) for k in c)*1.875/4.0)
+  if a.hold_seconds:
+   if target_update:raise ValueError('Hold test cannot change targets')
+   duration=a.hold_seconds
+  for register,limit in [('Present_Load',350),('Present_Temperature',49)]:
+   values=b.sync_read(register,normalize=False,num_retry=0)
+   if max(abs(v) for v in values.values())>limit:raise RuntimeError(str(values))
+  start=time.monotonic();samples=0;deadline=start;period=.02;write_times=[];misses=0
+  timing_path=f'/tmp/robot-{run_id}-timing.json'
+  actual=b.sync_read('Present_Position',num_retry=0)
+  while True:
+   if video_errors:raise RuntimeError(str(video_errors))
+   elapsed=time.monotonic()-start;u=min(1.0,elapsed/duration);f=10*u**3-15*u**4+6*u**5
+   q={k:initial[k]+f*(target[k]-initial[k]) for k in c}
+   sent_start=time.monotonic_ns()
+   b.sync_write('Goal_Position',q,num_retry=0)
+   record('command',sequence=samples,target=q,write_start_ns=sent_start)
+   write_times.append(time.monotonic())
+   # One telemetry transaction per tick, serialized on the same bus.
+   if samples%50==49:
+    temps=b.sync_read('Present_Temperature',normalize=False,num_retry=0)
+    record('temperature',sequence=samples,values=temps)
+    if max(temps.values())>=50:raise RuntimeError('Temperature threshold exceeded: '+str(temps))
+   elif samples%2==0:
+    actual=b.sync_read('Present_Position',num_retry=0)
+    record('position',sequence=samples,values=actual,target=q,error={k:actual[k]-q[k] for k in c})
+    if max(abs(actual[k]-q[k]) for k in c)>12:raise RuntimeError('Tracking error above 12')
+   else:
+    loads=b.sync_read('Present_Load',normalize=False,num_retry=0)
+    record('load',sequence=samples,values=loads)
+    if max(abs(v) for v in loads.values())>350:raise RuntimeError('Load threshold exceeded: '+str(loads))
+   if samples%50==0:control_log.flush()
+   samples+=1
+   if u>=1:break
+   deadline+=period
+   now=time.monotonic()
+   if now>deadline:
+    misses+=1
+    # Skip expired slots rather than emit a burst of stale setpoints.
+    while deadline<now:deadline+=period
+   time.sleep(max(0,deadline-time.monotonic()))
+  intervals=[(y-x)*1000 for x,y in zip(write_times,write_times[1:])]
+  ordered=sorted(intervals)
+  stats={'target_hz':50,'effective_hz':(len(write_times)-1)/(write_times[-1]-write_times[0]),'samples':len(write_times),'p99_interval_ms':ordered[int(.99*(len(ordered)-1))],'max_interval_ms':max(intervals),'intervals_over_33_33ms':sum(x>1000/30 for x in intervals),'missed_deadlines':misses}
+  Path(timing_path).write_text(json.dumps({'stats':stats,'write_completion_monotonic':write_times}))
+  print('TIMING',json.dumps(stats),flush=True)
+  print('TIMING_FILE',timing_path,flush=True)
+  settling=[]
+  for _ in range(30):
+   settling.append(b.sync_read('Present_Position',num_retry=2))
+   record('settling_position',values=settling[-1])
+   time.sleep(.1)
+  print('SETTLE_RANGE_DEG',json.dumps({k:round(max(x[k] for x in settling)-min(x[k] for x in settling),3) for k in c}),flush=True)
+ print('FINAL',json.dumps(b.sync_read('Present_Position',num_retry=2)),flush=True)
+ print('LOAD',json.dumps(b.sync_read('Present_Load',normalize=False,num_retry=2)),flush=True)
+ print('TEMPERATURE',json.dumps(b.sync_read('Present_Temperature',normalize=False,num_retry=2)),flush=True)
+ with open('/tmp/spark-direct-history.jsonl','a') as log:
+  log.write(json.dumps({'run_id':run_id,'time':time.time(),'target':target,'actual':b.sync_read('Present_Position',num_retry=2)})+'\n')
+except BaseException as error:
+ record('error',message=repr(error))
+ try:b.sync_write('Goal_Position',b.sync_read('Present_Position',normalize=False,num_retry=2),normalize=False,num_retry=2)
+ except Exception:pass
+ raise
+finally:
+ video_stop.set()
+ if video_thread:
+  video_thread.join(5)
+  print('VIDEO_FILE',video_path,flush=True)
+  print('FRAME_LOG',frame_path,flush=True)
+ record('end')
+ control_log.close()
+ print('CONTROL_LOG',log_path,flush=True)
+ b.disconnect(False)
+for i in (0,2):
+ cap=cv2.VideoCapture(i,cv2.CAP_V4L2)
+ try:
+  cap.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc(*'MJPG'));cap.set(3,1920);cap.set(4,1080)
+  for _ in range(8):ok,frame=cap.read()
+  if not ok:raise RuntimeError('Post-motion camera unavailable')
+  snapshot=f'/tmp/robot-{run_id}-camera-{i}.jpg'
+  if not cv2.imwrite(snapshot,frame):raise RuntimeError('Snapshot write failed')
+  print('SNAPSHOT',snapshot,flush=True)
+ finally:cap.release()

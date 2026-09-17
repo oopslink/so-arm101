@@ -26,3 +26,7 @@
 ## 仿真强化学习实验
 
 [simulation/](simulation/README.md) 提供基于官方 SO-101 MuJoCo 模型的单次敲击环境、脚本验证、PPO 训练和视频评估。当前演示支持虎头木鱼与物理接触抓握，RL 训练仍是历史固定持槌基线，验证范围见 [仿真验证记录](simulation/VALIDATION.md)。
+
+## 2026-09-17 直接控制实验
+
+[实验报告与训练示教对照](https://oopslink.github.io/so-arm101/04-direct-control-experiment-20260917.html) · [统计与证据](reports/direct-control-20260917/)

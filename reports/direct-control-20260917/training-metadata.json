@@ -1,0 +1,354 @@
+{
+  "original": {
+    "dataset": "qiaomuyu_search_dual_v1_80_fixed",
+    "info": {
+      "codebase_version": "v3.0",
+      "fps": 30,
+      "features": {
+        "action": {
+          "dtype": "float32",
+          "names": [
+            "shoulder_pan.pos",
+            "shoulder_lift.pos",
+            "elbow_flex.pos",
+            "wrist_flex.pos",
+            "wrist_roll.pos",
+            "gripper.pos"
+          ],
+          "shape": [
+            6
+          ]
+        },
+        "observation.state": {
+          "dtype": "float32",
+          "names": [
+            "shoulder_pan.pos",
+            "shoulder_lift.pos",
+            "elbow_flex.pos",
+            "wrist_flex.pos",
+            "wrist_roll.pos",
+            "gripper.pos"
+          ],
+          "shape": [
+            6
+          ]
+        },
+        "observation.images.wrist": {
+          "dtype": "video",
+          "shape": [
+            1080,
+            1920,
+            3
+          ],
+          "names": [
+            "height",
+            "width",
+            "channels"
+          ],
+          "info": {
+            "is_depth_map": false,
+            "video.height": 1080,
+            "video.width": 1920,
+            "video.codec": "h264",
+            "video.pix_fmt": "yuv420p",
+            "video.fps": 30,
+            "video.channels": 3,
+            "has_audio": false,
+            "video.g": 2,
+            "video.crf": 23,
+            "video.preset": "ultrafast",
+            "video.fast_decode": 0,
+            "video.video_backend": "pyav",
+            "video.extra_options": {}
+          }
+        },
+        "observation.images.side": {
+          "dtype": "video",
+          "shape": [
+            1080,
+            1920,
+            3
+          ],
+          "names": [
+            "height",
+            "width",
+            "channels"
+          ],
+          "info": {
+            "is_depth_map": false,
+            "video.height": 1080,
+            "video.width": 1920,
+            "video.codec": "h264",
+            "video.pix_fmt": "yuv420p",
+            "video.fps": 30,
+            "video.channels": 3,
+            "has_audio": false,
+            "video.g": 2,
+            "video.crf": 23,
+            "video.preset": "ultrafast",
+            "video.fast_decode": 0,
+            "video.video_backend": "pyav",
+            "video.extra_options": {}
+          }
+        },
+        "timestamp": {
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "names": null
+        },
+        "frame_index": {
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "names": null
+        },
+        "episode_index": {
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "names": null
+        },
+        "index": {
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "names": null
+        },
+        "task_index": {
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "names": null
+        }
+      },
+      "total_episodes": 80,
+      "total_frames": 50596,
+      "total_tasks": 1,
+      "chunks_size": 1000,
+      "data_files_size_in_mb": 100,
+      "video_files_size_in_mb": 200,
+      "data_path": "data/chunk-{chunk_index:03d}/file-{file_index:03d}.parquet",
+      "video_path": "videos/{video_key}/chunk-{chunk_index:03d}/file-{file_index:03d}.mp4",
+      "robot_type": "so_follower",
+      "splits": {
+        "train": "0:80"
+      }
+    },
+    "files": [
+      {
+        "path": "data/chunk-000/file-000.parquet",
+        "sha256": "061783e7cefa8cec99f0bc072845e3af110583d03bec4b2d59d8c2ea7152eca5"
+      },
+      {
+        "path": "data/chunk-000/file-001.parquet",
+        "sha256": "decf3f0a3bde46645fae577635b160f94da23bba6e81d9ba6ef9e3dbe660001d"
+      },
+      {
+        "path": "data/chunk-000/file-002.parquet",
+        "sha256": "0b66f1779b209b36ec681c813036d02db85e86bacfb0bf0d1c04cf89e86a291a"
+      },
+      {
+        "path": "data/chunk-000/file-003.parquet",
+        "sha256": "31ea09747cf37994881dfa94816a9d2e90ffd03674750d49a5d1d513cc50cfa6"
+      },
+      {
+        "path": "data/chunk-000/file-004.parquet",
+        "sha256": "324ed4e063b0029b3a469e7eb9ff9845ef4cb660cc2dd83cad8b46899605597a"
+      },
+      {
+        "path": "data/chunk-000/file-005.parquet",
+        "sha256": "c7b416d031d51da0d6e640113faacf0f2d4cb5f3bfa3028ef066d3dd5a7f7c81"
+      },
+      {
+        "path": "data/chunk-000/file-006.parquet",
+        "sha256": "b3f3fd6033931d8a7e55d941221284e231348e7e00bc8f775aa221e831065e46"
+      },
+      {
+        "path": "data/chunk-000/file-007.parquet",
+        "sha256": "414579496ae0201ab033b78457c27892df5ca400e6c494e23cc7937ec281f3b1"
+      }
+    ]
+  },
+  "future4": {
+    "dataset": "qiaomuyu_search_dual_v1_80_follower_future4",
+    "info": {
+      "codebase_version": "v3.0",
+      "fps": 30,
+      "features": {
+        "action": {
+          "dtype": "float32",
+          "names": [
+            "shoulder_pan.pos",
+            "shoulder_lift.pos",
+            "elbow_flex.pos",
+            "wrist_flex.pos",
+            "wrist_roll.pos",
+            "gripper.pos"
+          ],
+          "shape": [
+            6
+          ]
+        },
+        "observation.state": {
+          "dtype": "float32",
+          "names": [
+            "shoulder_pan.pos",
+            "shoulder_lift.pos",
+            "elbow_flex.pos",
+            "wrist_flex.pos",
+            "wrist_roll.pos",
+            "gripper.pos"
+          ],
+          "shape": [
+            6
+          ]
+        },
+        "observation.images.wrist": {
+          "dtype": "video",
+          "shape": [
+            1080,
+            1920,
+            3
+          ],
+          "names": [
+            "height",
+            "width",
+            "channels"
+          ],
+          "info": {
+            "is_depth_map": false,
+            "video.height": 1080,
+            "video.width": 1920,
+            "video.codec": "h264",
+            "video.pix_fmt": "yuv420p",
+            "video.fps": 30,
+            "video.channels": 3,
+            "has_audio": false,
+            "video.g": 2,
+            "video.crf": 23,
+            "video.preset": "ultrafast",
+            "video.fast_decode": 0,
+            "video.video_backend": "pyav",
+            "video.extra_options": {}
+          }
+        },
+        "observation.images.side": {
+          "dtype": "video",
+          "shape": [
+            1080,
+            1920,
+            3
+          ],
+          "names": [
+            "height",
+            "width",
+            "channels"
+          ],
+          "info": {
+            "is_depth_map": false,
+            "video.height": 1080,
+            "video.width": 1920,
+            "video.codec": "h264",
+            "video.pix_fmt": "yuv420p",
+            "video.fps": 30,
+            "video.channels": 3,
+            "has_audio": false,
+            "video.g": 2,
+            "video.crf": 23,
+            "video.preset": "ultrafast",
+            "video.fast_decode": 0,
+            "video.video_backend": "pyav",
+            "video.extra_options": {}
+          }
+        },
+        "timestamp": {
+          "dtype": "float32",
+          "shape": [
+            1
+          ],
+          "names": null
+        },
+        "frame_index": {
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "names": null
+        },
+        "episode_index": {
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "names": null
+        },
+        "index": {
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "names": null
+        },
+        "task_index": {
+          "dtype": "int64",
+          "shape": [
+            1
+          ],
+          "names": null
+        }
+      },
+      "total_episodes": 80,
+      "total_frames": 50596,
+      "total_tasks": 1,
+      "chunks_size": 1000,
+      "data_files_size_in_mb": 100,
+      "video_files_size_in_mb": 200,
+      "data_path": "data/chunk-{chunk_index:03d}/file-{file_index:03d}.parquet",
+      "video_path": "videos/{video_key}/chunk-{chunk_index:03d}/file-{file_index:03d}.mp4",
+      "robot_type": "so_follower",
+      "splits": {
+        "train": "0:80"
+      }
+    },
+    "files": [
+      {
+        "path": "data/chunk-000/file-000.parquet",
+        "sha256": "cf05e1bc6e7b3d27c6684636b66b1770ed0fdd608c365569be7f629cf1404bce"
+      },
+      {
+        "path": "data/chunk-000/file-001.parquet",
+        "sha256": "80399ab019f26edb65f77fe1f3883262cafa5f1cab34ad8daa61bd83c3d34464"
+      },
+      {
+        "path": "data/chunk-000/file-002.parquet",
+        "sha256": "91cd698cf2bae5d417e2b5c4b3adb4f21768413a4a51501cd1d44206e78ab1f5"
+      },
+      {
+        "path": "data/chunk-000/file-003.parquet",
+        "sha256": "d256e2036dd3a7d8f8a45506281fc845be8ba66e1b573b037c2fe89a569cd85d"
+      },
+      {
+        "path": "data/chunk-000/file-004.parquet",
+        "sha256": "cf9511891b699427184a9603b6ab80597efa8451a592943d4051832bf33b9b2a"
+      },
+      {
+        "path": "data/chunk-000/file-005.parquet",
+        "sha256": "7585e798f4f9017170f759883d017e7e4937b6e235fe63419ef41261f12c13dd"
+      },
+      {
+        "path": "data/chunk-000/file-006.parquet",
+        "sha256": "f05c07e90b7056f6df26f9d84c0a8e27a4b400d0b47903d6f4832a5520ab450f"
+      },
+      {
+        "path": "data/chunk-000/file-007.parquet",
+        "sha256": "e772fcff2d97c3ee109304d8f54170ce45abf69afd8c82b67dd27bab6174e747"
+      }
+    ]
+  }
+}

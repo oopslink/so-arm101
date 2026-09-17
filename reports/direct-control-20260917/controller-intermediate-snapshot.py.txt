@@ -1,0 +1,81 @@
+import argparse, json, time
+from datetime import datetime
+from pathlib import Path
+import cv2
+from lerobot.motors import Motor, MotorNormMode, MotorCalibration
+from lerobot.motors.feetech import FeetechMotorsBus
+
+p=argparse.ArgumentParser();p.add_argument('--target',default='{}');a=p.parse_args()
+target_update=json.loads(a.target)
+run_id=datetime.now().strftime('%Y%m%d-%H%M%S-%f')
+c=json.loads(Path('/home/oopslink/.cache/huggingface/lerobot/calibration/robots/so_follower/oopslink_follower_arm.json').read_text())
+b=FeetechMotorsBus(port='/dev/ttyACM0',motors={n:Motor(v['id'],'sts3215',MotorNormMode.RANGE_0_100 if n=='gripper' else MotorNormMode.DEGREES) for n,v in c.items()},calibration={n:MotorCalibration(**v) for n,v in c.items()})
+bounds={'shoulder_pan':(-55,55),'shoulder_lift':(-5,120),'elbow_flex':(-75,30),'wrist_flex':(-110,35),'wrist_roll':(-80,80),'gripper':(1.5,35)}
+b.connect(handshake=False)
+try:
+ if not b.is_calibrated:raise RuntimeError('Calibration mismatch')
+ initial=b.sync_read('Present_Position',num_retry=2)
+ print('INITIAL',json.dumps(initial),flush=True)
+ torque=b.sync_read('Torque_Enable',normalize=False,num_retry=2)
+ previous_goal=b.sync_read('Goal_Position',num_retry=2) if all(torque.values()) else initial.copy()
+ target={**previous_goal,**target_update}
+ if all(torque.values()):initial['gripper']=previous_goal['gripper']
+ for k,v in target.items():
+  if k not in bounds or not bounds[k][0]<=v<=bounds[k][1]:raise ValueError('Outside permitted range')
+  if abs(v-initial[k])>25.1:raise ValueError('Step greater than 25 degrees/percent')
+ if all(torque.values()):initial=previous_goal.copy()
+ if target_update:
+  # Validate both fresh camera feeds before enabling or commanding motion.
+  for i in (0,2):
+   cap=cv2.VideoCapture(i,cv2.CAP_V4L2)
+   ok,_=cap.read();cap.release()
+   if not ok:raise RuntimeError('Camera unavailable')
+  torque=b.sync_read('Torque_Enable',normalize=False,num_retry=2)
+  if not all(torque.values()):
+   if any(torque.values()):raise RuntimeError('Unexpected mixed torque state')
+   raw=b.sync_read('Present_Position',normalize=False,num_retry=2)
+   b.sync_write('Goal_Position',raw,normalize=False,num_retry=2)
+   for n in c:b.write('Goal_Velocity',n,80,normalize=False,num_retry=2)
+   if any(v!=80 for v in b.sync_read('Goal_Velocity',normalize=False,num_retry=2).values()):raise RuntimeError('Speed setting failed')
+   b.enable_torque(num_retry=2)
+  duration=max(3.0,max(abs(target[k]-initial[k]) for k in c)*1.875/4.0)
+  start=time.monotonic();samples=0
+  while True:
+   elapsed=time.monotonic()-start;u=min(1.0,elapsed/duration);f=10*u**3-15*u**4+6*u**5
+   q={k:initial[k]+f*(target[k]-initial[k]) for k in c}
+   b.sync_write('Goal_Position',q,num_retry=2)
+   actual=b.sync_read('Present_Position',num_retry=2)
+   loads=b.sync_read('Present_Load',normalize=False,num_retry=2)
+   if max(abs(actual[k]-q[k]) for k in c)>12:raise RuntimeError('Tracking error above 12')
+   if max(abs(v) for v in loads.values())>350:raise RuntimeError('Load threshold exceeded: '+str(loads))
+   if samples%10==0:
+    temps=b.sync_read('Present_Temperature',normalize=False,num_retry=2)
+    if max(temps.values())>=50:raise RuntimeError('Temperature threshold exceeded: '+str(temps))
+   samples+=1
+   if u>=1:break
+   time.sleep(.04)
+  settling=[]
+  for _ in range(30):
+   settling.append(b.sync_read('Present_Position',num_retry=2))
+   time.sleep(.1)
+  print('SETTLE_RANGE_DEG',json.dumps({k:round(max(x[k] for x in settling)-min(x[k] for x in settling),3) for k in c}),flush=True)
+ print('FINAL',json.dumps(b.sync_read('Present_Position',num_retry=2)),flush=True)
+ print('LOAD',json.dumps(b.sync_read('Present_Load',normalize=False,num_retry=2)),flush=True)
+ print('TEMPERATURE',json.dumps(b.sync_read('Present_Temperature',normalize=False,num_retry=2)),flush=True)
+ with open('/tmp/spark-direct-history.jsonl','a') as log:
+  log.write(json.dumps({'run_id':run_id,'time':time.time(),'target':target,'actual':b.sync_read('Present_Position',num_retry=2)})+'\n')
+except BaseException:
+ try:b.sync_write('Goal_Position',b.sync_read('Present_Position',normalize=False,num_retry=2),normalize=False,num_retry=2)
+ except Exception:pass
+ raise
+finally:b.disconnect(False)
+for i in (0,2):
+ cap=cv2.VideoCapture(i,cv2.CAP_V4L2)
+ try:
+  cap.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc(*'MJPG'));cap.set(3,1920);cap.set(4,1080)
+  for _ in range(8):ok,frame=cap.read()
+  if not ok:raise RuntimeError('Post-motion camera unavailable')
+  snapshot=f'/tmp/robot-{run_id}-camera-{i}.jpg'
+  if not cv2.imwrite(snapshot,frame):raise RuntimeError('Snapshot write failed')
+  print('SNAPSHOT',snapshot,flush=True)
+ finally:cap.release()

@@ -1,0 +1,214 @@
+{
+  "method": {
+    "common_hz": 25,
+    "difference_window_s": 0.2,
+    "encoder_tick_deg": 0.08791208791208792,
+    "gripper_excluded": true,
+    "training_time_is_nominal_not_bus_wall_time": true,
+    "cross_segment_derivatives_excluded": true
+  },
+  "training": {
+    "episodes": 80,
+    "frames": 50596,
+    "duration_s_min_median_max": [
+      15.766666412353516,
+      20.28333282470703,
+      34.5
+    ],
+    "state_unchanged_in_future4": true,
+    "future4_formula_max_abs_error": 0.0,
+    "original_action_state_abs_p95_by_joint": {
+      "shoulder_pan": 3.07692289352417,
+      "shoulder_lift": 8.769232749938965,
+      "elbow_flex": 6.461538314819336,
+      "wrist_flex": 65.89011144638062,
+      "wrist_roll": 2.989010810852051
+    },
+    "samples_25hz": 41732,
+    "all_five_speed_below_1deg_s_pct": 26.72769098054251,
+    "speed_abs_p50_by_joint": {
+      "shoulder_pan": 0.43955789817332225,
+      "shoulder_lift": 0.5274721303807486,
+      "elbow_flex": 0.5274840973753747,
+      "wrist_flex": 0.08791653141422273,
+      "wrist_roll": 0.0
+    },
+    "speed_abs_p95_by_joint": {
+      "shoulder_pan": 22.153835275577592,
+      "shoulder_lift": 65.75816883909023,
+      "elbow_flex": 45.011046026066865,
+      "wrist_flex": 59.16469053681615,
+      "wrist_roll": 22.153826526976633
+    },
+    "accel_abs_p95_by_joint": {
+      "shoulder_pan": 76.04390603691314,
+      "shoulder_lift": 167.03253100858464,
+      "elbow_flex": 148.13187144189,
+      "wrist_flex": 263.7365733618124,
+      "wrist_roll": 102.1761113683635
+    }
+  },
+  "direct": {
+    "log_files": 69,
+    "command_runs": 60,
+    "successful_command_runs": 57,
+    "error_runs": [
+      {
+        "run": "robot-20260917-211200-145258",
+        "commands": 350,
+        "positions": 175,
+        "errors": [
+          "RuntimeError(\"Temperature threshold exceeded: {'shoulder_pan': 38, 'shoulder_lift': 41, 'elbow_flex': 44, 'wrist_flex': 39, 'wrist_roll': 38, 'gripper': 58}\")"
+        ],
+        "start_s": 5571.728228005,
+        "end_s": 5578.707503283,
+        "duration_s": 6.979275277999477,
+        "effective_hz": 50.00519195741432,
+        "max_interval_ms": 21.129689999725088,
+        "intervals_over_33ms": 0,
+        "target": {
+          "shoulder_pan": 30,
+          "shoulder_lift": 70,
+          "elbow_flex": -70.06593406593407,
+          "wrist_flex": -6,
+          "wrist_roll": -0.04395604395604396,
+          "gripper": 1.9594594594594597
+        },
+        "max_joint_change_deg": 17.818795379602065,
+        "command_increment_p99_deg": 0.07977345173596745,
+        "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+        "max_tracking_error_deg_by_joint": {
+          "shoulder_pan": 0.9838956719517284,
+          "shoulder_lift": 2.201871750238297,
+          "elbow_flex": 1.4945054945055034,
+          "wrist_flex": 1.041256386753508,
+          "wrist_roll": 0.08791208791208792
+        },
+        "rms_tracking_error_deg_by_joint": {
+          "shoulder_pan": 0.6362315670514247,
+          "shoulder_lift": 1.519180498208177,
+          "elbow_flex": 1.494505494505501,
+          "wrist_flex": 0.725383260685734,
+          "wrist_roll": 0.08220065643681541
+        }
+      },
+      {
+        "run": "robot-20260917-213234-343124",
+        "commands": 500,
+        "positions": 250,
+        "errors": [
+          "RuntimeError(\"Temperature threshold exceeded: {'shoulder_pan': 38, 'shoulder_lift': 39, 'elbow_flex': 45, 'wrist_flex': 40, 'wrist_roll': 39, 'gripper': 51}\")"
+        ],
+        "start_s": 6805.911277399,
+        "end_s": 6815.889923596,
+        "duration_s": 9.978646196999762,
+        "effective_hz": 50.00678350035421,
+        "max_interval_ms": 21.378147999712382,
+        "intervals_over_33ms": 0,
+        "target": {
+          "shoulder_pan": 9.934065934065934,
+          "shoulder_lift": 70,
+          "elbow_flex": -35,
+          "wrist_flex": -28.0,
+          "wrist_roll": 24,
+          "gripper": 11.95945945945946
+        },
+        "max_joint_change_deg": 23.67892909751152,
+        "command_increment_p99_deg": 0.0795658222786028,
+        "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+        "max_tracking_error_deg_by_joint": {
+          "shoulder_pan": 0.4395604395604398,
+          "shoulder_lift": 2.4630997133709513,
+          "elbow_flex": 0.2971366893066758,
+          "wrist_flex": 0.6153846153846168,
+          "wrist_roll": 0.6600082249073793
+        },
+        "rms_tracking_error_deg_by_joint": {
+          "shoulder_pan": 0.43956043956044083,
+          "shoulder_lift": 1.8974621755018357,
+          "elbow_flex": 0.12314791452260643,
+          "wrist_flex": 0.5278533423866079,
+          "wrist_roll": 0.43303781931803675
+        }
+      },
+      {
+        "run": "robot-20260917-214359-267681",
+        "commands": 100,
+        "positions": 50,
+        "errors": [
+          "RuntimeError(\"Temperature threshold exceeded: {'shoulder_pan': 38, 'shoulder_lift': 39, 'elbow_flex': 51, 'wrist_flex': 39, 'wrist_roll': 39, 'gripper': 41}\")"
+        ],
+        "start_s": 7490.846116588,
+        "end_s": 7492.824631899,
+        "duration_s": 1.9785153110005922,
+        "effective_hz": 50.03752028076692,
+        "max_interval_ms": 20.85780200013687,
+        "intervals_over_33ms": 0,
+        "target": {
+          "shoulder_pan": 22.945054945054945,
+          "shoulder_lift": 59.956043956043956,
+          "elbow_flex": -20,
+          "wrist_flex": -50,
+          "wrist_roll": -48.043956043956044,
+          "gripper": 11.756756756756758
+        },
+        "max_joint_change_deg": 0.9194008230771686,
+        "command_increment_p99_deg": 0.024065833381175638,
+        "nonzero_command_increments_below_encoder_tick_pct": 100.0,
+        "max_tracking_error_deg_by_joint": {
+          "shoulder_pan": 0.1758241758241752,
+          "shoulder_lift": 0.439560439560438,
+          "elbow_flex": 3.780219778863479,
+          "wrist_flex": 0.7032967019344198,
+          "wrist_roll": 0.3516483516483504
+        },
+        "rms_tracking_error_deg_by_joint": {
+          "shoulder_pan": 0.1758241758241751,
+          "shoulder_lift": 0.43956043956043805,
+          "elbow_flex": 3.5501688201987256,
+          "wrist_flex": 0.5331084607243488,
+          "wrist_roll": 0.3516483516483502
+        }
+      }
+    ],
+    "recorded_span_s": 4342.731119244,
+    "command_span_sum_s": 404.1476053280012,
+    "command_span_duty_pct": 9.30630044160682,
+    "inter_run_gap_s_min_median_p95_max": [
+      24.144732445000045,
+      42.08186808699975,
+      210.7221538794996,
+      369.8792770109999
+    ],
+    "good_run_hz_min_median_max": [
+      49.995832530722026,
+      50.00357235521415,
+      50.022021844953365
+    ],
+    "good_run_max_interval_ms": 21.675790000699635,
+    "good_run_intervals_over_33ms": 0,
+    "samples_25hz": 8708,
+    "all_five_speed_below_1deg_s_pct": 28.99632521819017,
+    "speed_abs_p50_by_joint": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.439560439560438,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0
+    },
+    "speed_abs_p95_by_joint": {
+      "shoulder_pan": 3.074057871765605,
+      "shoulder_lift": 3.969080944215615,
+      "elbow_flex": 3.06560418964422,
+      "wrist_flex": 3.9678717519343096,
+      "wrist_roll": 3.9463194821138434
+    },
+    "accel_abs_p95_by_joint": {
+      "shoulder_pan": 11.015252702436085,
+      "shoulder_lift": 10.986278421575125,
+      "elbow_flex": 8.774312516854152,
+      "wrist_flex": 10.825597926732367,
+      "wrist_roll": 6.605177457875593
+    }
+  }
+}
