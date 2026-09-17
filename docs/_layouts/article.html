@@ -43,7 +43,7 @@
           <span class="tag">{{ page.section_label }}</span>
           <h1>{{ page.title }}</h1>
           <p>{{ page.subtitle }}</p>
-          <div class="article-meta"><span>SO-ARM101</span><span>LeRobot</span><span>π0</span></div>
+          <div class="article-meta"><span>SO-ARM101</span><span>LeRobot</span><span>{{ page.model_label | default: "π0" | escape }}</span></div>
         </header>
         <article class="article-body" id="articleBody">
           {{ content }}

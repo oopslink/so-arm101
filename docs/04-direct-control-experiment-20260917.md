@@ -3,6 +3,7 @@ layout: article
 title: GPT-6 Astra 直接驱动机械臂敲木鱼
 subtitle: 2026-09-17 多轮真机实验：实现链路、现场纠正、执行结果与训练示教对照
 section_label: 实验报告
+model_label: GPT-6 Astra
 description: 完整复盘GPT-6 Astra通过双相机、SSH与LeRobot直接驱动SO-101寻找敲杆、抓取、敲击、放回和回零的多轮实验，并对照80条训练示教提出平滑移动方案。
 ---
 
