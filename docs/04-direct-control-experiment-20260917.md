@@ -7,6 +7,14 @@ model_label: GPT-6 Astra
 description: 完整复盘GPT-6 Astra通过双相机、SSH与LeRobot直接驱动SO-101寻找敲杆、抓取、敲击、放回和回零的多轮实验，并对照80条训练示教提出平滑移动方案。
 ---
 
+## 实验成品视频
+
+以下为本次实验的成品视频，**已进行分段加速，各段播放速度并不一致**。视频用于概览操作过程，不能据此判断机械臂的实际运动速度、停顿时长或实时控制效果；原始片段与数据分析见下文。
+
+<video controls playsinline preload="metadata" style="width:100%;border-radius:12px" aria-label="GPT-6 Astra 直接驱动机械臂实验成品视频（分段加速）"><source src="assets/direct-control-20260917/direct-control-demo.mp4" type="video/mp4">当前浏览器不支持视频播放，请下载下方 MP4 文件观看。</video>
+
+[下载成品视频（MP4，分段加速）](assets/direct-control-20260917/direct-control-demo.mp4)
+
 ## 1. 实验目标与总体结果
 
 本次实验要回答的是：**不运行已经训练好的机器人动作策略，让 GPT-6 Astra 在 Codex 中观察真实相机、理解用户要求、生成控制动作，能否直接驱动 SO-101 完成敲木鱼任务？**
