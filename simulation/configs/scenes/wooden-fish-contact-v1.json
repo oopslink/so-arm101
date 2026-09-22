@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "wooden-fish-contact-v1",
+  "version": "1.0.0",
+  "title": "SO-101 木鱼接触抓握场景",
+  "description": "使用真实接触完成夹紧、提起、单次敲击、抬起和释放的 MuJoCo 工程场景。",
+  "engine": "mujoco",
+  "kind": "contact_grasp",
+  "status": "partial_task_validation",
+  "assets": {
+    "robot_model": "assets/so101/so101_new_calib.xml",
+    "tabletop_config": "configs/tabletop-reference.json",
+    "physics_config": "configs/grasp-physics.json"
+  },
+  "robot": {
+    "name": "SO-101",
+    "control_mode": "joint_position",
+    "action_order": [
+      "shoulder_pan",
+      "shoulder_lift",
+      "elbow_flex",
+      "wrist_flex",
+      "wrist_roll",
+      "gripper"
+    ]
+  },
+  "cameras": ["overview", "side", "wrist"],
+  "task": {
+    "instruction": "找到木鱼，拿起敲棒，敲三下，放回敲棒，回位",
+    "implemented_phases": ["夹紧", "提起", "保持", "单次敲击", "抬起", "释放"],
+    "not_implemented_phases": ["视觉寻找", "从底板接近并抓取", "连续敲三下", "放回原位", "回位"]
+  },
+  "randomization": {
+    "fish_xy_metres": 0.005,
+    "joint_start_radians": 0.003
+  },
+  "success_criteria": {
+    "requires_contact_only_grasp": true,
+    "minimum_lift_metres": 0.025,
+    "maximum_relative_drift_metres": 0.005,
+    "minimum_release_drop_metres": 0.05,
+    "required_hits": 1
+  }
+}

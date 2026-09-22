@@ -1,5 +1,28 @@
 # 真实接触抓握（当前默认演示）
 
+## Scene Studio：场景注册与校验
+
+`configs/scenes/` 把任务意图、机器人动作顺序、双相机、几何配置、物理配置和成功条件登记为带版本的场景。它是配置与验证入口，不会把当前工程场景包装成已经标定的数字孪生。
+
+```bash
+# 查看、检查和编译所有已登记场景
+.venv-sim/bin/python -m wooden_fish.scene_manager list
+.venv-sim/bin/python -m wooden_fish.scene_manager validate
+
+# 查看一个场景的能力边界
+.venv-sim/bin/python -m wooden_fish.scene_manager show wooden-fish-contact-v1
+
+# 导出可单独检查的 MJCF 与对应场景元数据
+.venv-sim/bin/python -m wooden_fish.scene_manager export wooden-fish-contact-v1 \
+  --output simulation/runs/scene-studio/wooden-fish-contact-v1.xml
+
+# 从总览、固定侧相机或腕部相机渲染初始化画面
+.venv-sim/bin/python -m wooden_fish.scene_manager render wooden-fish-contact-v1 \
+  --camera side --output simulation/runs/scene-studio/side.png
+```
+
+当前注册的 `wooden-fish-contact-v1` 只实现夹紧、提起、保持、单次敲击、抬起和释放；视觉寻找、从底板接近抓取、连续敲三下、准确放回与回位仍明确列在 `not_implemented_phases` 中。
+
 ```bash
 # Mac 实时演示，一回合结束后自动关闭；默认半速
 .venv-sim/bin/mjpython -m wooden_fish.play

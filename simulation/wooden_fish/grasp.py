@@ -78,8 +78,9 @@ def build_grasp_model(tabletop, physics):
 
 
 class ContactGrasp:
-    def __init__(self, seed=0, physics=None):
-        self.tabletop = json.loads((ROOT / "configs/tabletop-reference.json").read_text())
+    def __init__(self, seed=0, physics=None, tabletop=None):
+        self.tabletop = (tabletop if tabletop is not None
+                         else json.loads((ROOT / "configs/tabletop-reference.json").read_text()))
         self.physics = physics or json.loads((ROOT / "configs/grasp-physics.json").read_text())
         self.model = build_grasp_model(self.tabletop, self.physics)
         self.data = mujoco.MjData(self.model)
