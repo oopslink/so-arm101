@@ -4,6 +4,7 @@ import ast
 import importlib.util
 import json
 from pathlib import Path
+import re
 import subprocess
 import sys
 import tempfile
@@ -16,6 +17,20 @@ spec.loader.exec_module(metrics)
 
 
 class ToolsTest(unittest.TestCase):
+    def test_homepage_can_open_without_jekyll(self):
+        homepage = (ROOT / 'docs/index.html').read_text()
+        self.assertNotIn('{{', homepage)
+        self.assertNotIn('{%', homepage)
+        references = re.findall(r'(?:href|src|poster)="([^"]+)"', homepage)
+        local_assets = [
+            reference for reference in references
+            if not reference.startswith(('http://', 'https://', '#'))
+            and not reference.endswith('.html')
+        ]
+        for reference in local_assets:
+            with self.subTest(reference=reference):
+                self.assertTrue((ROOT / 'docs' / reference).is_file())
+
     def test_syntax(self):
         for p in (ROOT / 'scripts').glob('*.py'):
             ast.parse(p.read_text(), filename=str(p))
